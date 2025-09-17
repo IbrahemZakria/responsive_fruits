@@ -22,6 +22,7 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "about_us": MessageLookupByLibrary.simpleMessage("من نحن"),
         "already_have_account":
             MessageLookupByLibrary.simpleMessage("لديك حساب بالفعل؟"),
         "already_member": MessageLookupByLibrary.simpleMessage("عضو بالفعل؟"),
@@ -39,12 +40,14 @@ class MessageLookup extends MessageLookupByLibrary {
         "explore_fruits": MessageLookupByLibrary.simpleMessage(
             "استكشف الفواكه العضوية واحصل عليها"),
         "fast_payment": MessageLookupByLibrary.simpleMessage("دفع سريع"),
+        "favorites": MessageLookupByLibrary.simpleMessage("المفضلة"),
         "first_and_last_name":
             MessageLookupByLibrary.simpleMessage("الاسم الأول واسم العائلة"),
         "forget_password":
             MessageLookupByLibrary.simpleMessage("نسيت كلمة المرور؟"),
         "full_name": MessageLookupByLibrary.simpleMessage("الاسم الكامل"),
         "get_started": MessageLookupByLibrary.simpleMessage("ابدأ"),
+        "language": MessageLookupByLibrary.simpleMessage("اللغة"),
         "login": MessageLookupByLibrary.simpleMessage(" تسجيل الدخول "),
         "login_to_wikala":
             MessageLookupByLibrary.simpleMessage("تسجيل الدخول إلى ويكالا"),
@@ -59,6 +62,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("رقم الهاتف مع واتساب"),
         "privacy_policy":
             MessageLookupByLibrary.simpleMessage("سياسة الخصوصية"),
+        "profile": MessageLookupByLibrary.simpleMessage("الحساب"),
         "quick_secure_checkout":
             MessageLookupByLibrary.simpleMessage("عملية دفع سريعة وآمنة"),
         "send_again": MessageLookupByLibrary.simpleMessage("أعد الإرسال"),
@@ -74,10 +78,14 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("إنشاء حساب في ويكالا"),
         "skip": MessageLookupByLibrary.simpleMessage("تخطي"),
         "submit": MessageLookupByLibrary.simpleMessage("إرسال"),
+        "support": MessageLookupByLibrary.simpleMessage("الدعم"),
+        "terms_conditions":
+            MessageLookupByLibrary.simpleMessage("الشروط والأحكام"),
         "terms_of_service":
             MessageLookupByLibrary.simpleMessage(" شروط الخدمة "),
         "terms_of_service_tapped":
             MessageLookupByLibrary.simpleMessage("تم الضغط على شروط الخدمة!"),
+        "welcome": MessageLookupByLibrary.simpleMessage("مرحبًا"),
         "welcome_to_app":
             MessageLookupByLibrary.simpleMessage("مرحبًا بك في تطبيقنا")
       };

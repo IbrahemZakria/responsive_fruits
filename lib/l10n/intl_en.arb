@@ -114,7 +114,30 @@
 "@enter_received_otp": {},
 
 "confirm": "Confirm",
-"@confirm": {}
+"@confirm": {},
+
+  "welcome": "Welcome",
+  "@welcome": {},
+  
+  "profile": "Profile",
+  "@profile": {},
+  
+  "favorites": "Favorites",
+  "@favorites": {},
+  
+  "language": "Language",
+  "@language": {},
+  
+  "support": "Support",
+  "@support": {},
+  
+  "about_us": "About Us",
+  "@about_us": {},
+  
+  "terms_conditions": "Terms & Conditions",
+  "@terms_conditions": {}
+
+
 
 
 

@@ -110,7 +110,30 @@
 "@not_received": {},
 
 "send_again": "أعد الإرسال",
-"@send_again": {}
+"@send_again": {},
+
+  "welcome": "مرحبًا",
+  "@welcome": {},
+  
+  "profile": "الحساب",
+  "@profile": {},
+  
+  "favorites": "المفضلة",
+  "@favorites": {},
+  
+  "language": "اللغة",
+  "@language": {},
+  
+  "support": "الدعم",
+  "@support": {},
+  
+  "about_us": "من نحن",
+  "@about_us": {},
+  
+  "terms_conditions": "الشروط والأحكام",
+  "@terms_conditions": {}
+
+
 
 
 }

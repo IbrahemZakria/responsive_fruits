@@ -22,6 +22,7 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "about_us": MessageLookupByLibrary.simpleMessage("About Us"),
         "already_have_account":
             MessageLookupByLibrary.simpleMessage("Already have an account?"),
         "already_member":
@@ -42,12 +43,14 @@ class MessageLookup extends MessageLookupByLibrary {
         "explore_fruits": MessageLookupByLibrary.simpleMessage(
             "Explore organic fruits & grab them"),
         "fast_payment": MessageLookupByLibrary.simpleMessage("Fast Payment"),
+        "favorites": MessageLookupByLibrary.simpleMessage("Favorites"),
         "first_and_last_name":
             MessageLookupByLibrary.simpleMessage("First and Last Name"),
         "forget_password":
             MessageLookupByLibrary.simpleMessage("Forget Password?"),
         "full_name": MessageLookupByLibrary.simpleMessage("Full Name"),
         "get_started": MessageLookupByLibrary.simpleMessage("Get Started"),
+        "language": MessageLookupByLibrary.simpleMessage("Language"),
         "login": MessageLookupByLibrary.simpleMessage(" Login "),
         "login_to_wikala":
             MessageLookupByLibrary.simpleMessage("Login to Wikala"),
@@ -62,6 +65,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Phone Number with Whatsapp"),
         "privacy_policy":
             MessageLookupByLibrary.simpleMessage("Privacy Policy"),
+        "profile": MessageLookupByLibrary.simpleMessage("Profile"),
         "quick_secure_checkout": MessageLookupByLibrary.simpleMessage(
             "Quick and secure checkout process"),
         "send_again": MessageLookupByLibrary.simpleMessage("Send Again"),
@@ -77,10 +81,14 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Sign Up to Wikala"),
         "skip": MessageLookupByLibrary.simpleMessage("Skip"),
         "submit": MessageLookupByLibrary.simpleMessage("Submit"),
+        "support": MessageLookupByLibrary.simpleMessage("Support"),
+        "terms_conditions":
+            MessageLookupByLibrary.simpleMessage("Terms & Conditions"),
         "terms_of_service":
             MessageLookupByLibrary.simpleMessage(" Terms of Service "),
         "terms_of_service_tapped":
             MessageLookupByLibrary.simpleMessage("Terms of Service tapped!"),
+        "welcome": MessageLookupByLibrary.simpleMessage("Welcome"),
         "welcome_to_app":
             MessageLookupByLibrary.simpleMessage("Welcome to Our App")
       };
