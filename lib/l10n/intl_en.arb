@@ -1,0 +1,121 @@
+{
+  "@@locale": "en",
+
+"skip": "Skip",
+"@skip": {},
+
+  "enter_your_number": "Enter your number",
+"@enter_your_number": {},
+
+"phone_number": "Phone Number",
+"@phone_number": {},
+
+"mobile_number": "Mobile Number",
+"@mobile_number": {},
+
+"submit": "Submit",
+"@submit": {},
+
+"sign_up_to_wikala": "Sign Up to Wikala",
+"@sign_up_to_wikala": {},
+
+"sign_up": "Sign Up",
+"@sign_up": {},
+
+"already_have_account": "Already have an account?",
+"@already_have_account": {},
+
+"login": " Login ",
+"@login": {},
+
+"full_name": "Full Name",
+"@full_name": {},
+
+"first_and_last_name": "First and Last Name",
+"@first_and_last_name": {},
+
+"phone_number_whatsapp": "Phone Number with Whatsapp",
+"@phone_number_whatsapp": {},
+
+"password": "Password",
+"@password": {},
+
+"login_to_wikala": "Login to Wikala",
+"@login_to_wikala": {},
+
+"donot_have_account": "Don’t have an account?",
+"@donot_have_account": {},
+
+"forget_password": "Forget Password?",
+"@forget_password": {},
+
+"already_member": "Already member?",
+"@already_member": {},
+
+"sign_in": "Sign In",
+"@sign_in": {},
+
+"by_continue_agree": "By continuing, you agree to our",
+"@by_continue_agree": {},
+
+"terms_of_service": " Terms of Service ",
+"@terms_of_service": {},
+
+"terms_of_service_tapped": "Terms of Service tapped!",
+"@terms_of_service_tapped": {},
+
+"and_our": " and our ",
+"@and_our": {},
+
+"privacy_policy": "Privacy Policy",
+"@privacy_policy": {},
+
+"sign_in_with_phone": "Sign in with Phone Number",
+"@sign_in_with_phone": {},
+
+"sign_in_with_google": "Sign in with Google",
+"@sign_in_with_google": {},
+
+"sign_in_with_facebook": "Sign in with Facebook",
+"@sign_in_with_facebook": {},
+
+"welcome_to_app": "Welcome to Our App",
+"@welcome_to_app": {},
+
+"e_shopping": "E Shopping",
+"@e_shopping": {},
+
+"explore_fruits": "Explore organic fruits & grab them",
+"@explore_fruits": {},
+
+"delivery_arrived": "Delivery Arrived",
+"@delivery_arrived": {},
+
+"order_arrived_place": "Order has arrived at your place",
+"@order_arrived_place": {},
+
+"fast_payment": "Fast Payment",
+"@fast_payment": {},
+
+"quick_secure_checkout": "Quick and secure checkout process",
+"@quick_secure_checkout": {},
+
+"next": "Next",
+"@next": {},
+
+"get_started": "Get Started",
+"@get_started": {},
+"not_received": "Not received?",
+"@not_received": {},
+
+"send_again": "Send Again",
+"@send_again": {},
+"enter_received_otp": "Enter Received OTP",
+"@enter_received_otp": {},
+
+"confirm": "Confirm",
+"@confirm": {}
+
+
+
+}

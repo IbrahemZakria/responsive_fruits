@@ -1,0 +1,116 @@
+{"@@locale": "ar",  "skip": "تخطي",
+"@skip": {},
+"enter_your_number": "أدخل رقمك",
+"@enter_your_number": {},
+
+"phone_number": "رقم الهاتف",
+"@phone_number": {},
+
+"mobile_number": "رقم الجوال",
+"@mobile_number": {},
+
+"submit": "إرسال",
+"@submit": {},
+
+"sign_up_to_wikala": "إنشاء حساب في ويكالا",
+"@sign_up_to_wikala": {},
+
+"sign_up": "إنشاء حساب",
+"@sign_up": {},
+
+"already_have_account": "لديك حساب بالفعل؟",
+"@already_have_account": {},
+
+"login": " تسجيل الدخول ",
+"@login": {},
+
+"full_name": "الاسم الكامل",
+"@full_name": {},
+
+"first_and_last_name": "الاسم الأول واسم العائلة",
+"@first_and_last_name": {},
+
+"phone_number_whatsapp": "رقم الهاتف مع واتساب",
+"@phone_number_whatsapp": {},
+
+"password": "كلمة المرور",
+"@password": {},
+
+"login_to_wikala": "تسجيل الدخول إلى ويكالا",
+"@login_to_wikala": {},
+
+"donot_have_account": "ليس لديك حساب؟",
+"@donot_have_account": {},
+
+"forget_password": "نسيت كلمة المرور؟",
+"@forget_password": {},
+
+"already_member": "عضو بالفعل؟",
+"@already_member": {},
+
+"sign_in": "تسجيل دخول",
+"@sign_in": {},
+
+"by_continue_agree": "بمتابعتك، فإنك توافق على",
+"@by_continue_agree": {},
+
+"terms_of_service": " شروط الخدمة ",
+"@terms_of_service": {},
+
+"terms_of_service_tapped": "تم الضغط على شروط الخدمة!",
+"@terms_of_service_tapped": {},
+
+"and_our": " و ",
+"@and_our": {},
+
+"privacy_policy": "سياسة الخصوصية",
+"@privacy_policy": {},
+
+"sign_in_with_phone": "تسجيل الدخول باستخدام رقم الهاتف",
+"@sign_in_with_phone": {},
+
+"sign_in_with_google": "تسجيل الدخول باستخدام جوجل",
+"@sign_in_with_google": {},
+
+"sign_in_with_facebook": "تسجيل الدخول باستخدام فيسبوك",
+"@sign_in_with_facebook": {},
+
+"welcome_to_app": "مرحبًا بك في تطبيقنا",
+"@welcome_to_app": {},
+
+"e_shopping": "تسوق إلكتروني",
+"@e_shopping": {},
+
+"explore_fruits": "استكشف الفواكه العضوية واحصل عليها",
+"@explore_fruits": {},
+
+"delivery_arrived": "تم التوصيل",
+"@delivery_arrived": {},
+
+"order_arrived_place": "تم توصيل الطلب إلى مكانك",
+"@order_arrived_place": {},
+
+"fast_payment": "دفع سريع",
+"@fast_payment": {},
+
+"quick_secure_checkout": "عملية دفع سريعة وآمنة",
+"@quick_secure_checkout": {},
+
+"next": "التالي",
+"@next": {},
+
+"get_started": "ابدأ",
+"@get_started": {},
+"enter_received_otp": "أدخل رمز التحقق المستلم",
+"@enter_received_otp": {},
+
+"confirm": "تأكيد",
+"@confirm": {},
+"not_received": "لم يصلك الرمز؟",
+"@not_received": {},
+
+"send_again": "أعد الإرسال",
+"@send_again": {}
+
+
+}
