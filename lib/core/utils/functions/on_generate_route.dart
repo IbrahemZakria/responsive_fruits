@@ -4,7 +4,7 @@ import 'package:responsive_fruits/features/auth/presentation/pages/o_t_p_views.d
 import 'package:responsive_fruits/features/auth/presentation/pages/sign_in.dart';
 import 'package:responsive_fruits/features/auth/presentation/pages/phone_sign_up_page.dart';
 import 'package:responsive_fruits/features/auth/presentation/pages/sign_up.dart';
-import 'package:responsive_fruits/features/home.dart/presentation/pages/home_page.dart';
+import 'package:responsive_fruits/features/home.dart/presentation/pages/adabtive_main_home_page.dart';
 import 'package:responsive_fruits/features/onboarding/presentation/pages/on_boarding_view.dart';
 
 Route<dynamic> onGenerateRoute(RouteSettings settings) {
@@ -21,8 +21,8 @@ Route<dynamic> onGenerateRoute(RouteSettings settings) {
       return MaterialPageRoute(builder: (context) => ForgetPasswordPage());
     case OTPViews.routeName:
       return MaterialPageRoute(builder: (context) => OTPViews());
-    case HomePage.routeName:
-      return MaterialPageRoute(builder: (context) => HomePage());
+    case AdabtiveMainHomePage.routeName:
+      return MaterialPageRoute(builder: (context) => AdabtiveMainHomePage());
 
     default:
       return MaterialPageRoute(

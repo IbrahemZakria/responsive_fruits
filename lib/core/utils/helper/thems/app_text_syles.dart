@@ -74,7 +74,7 @@ class AppTextSyles {
   static TextStyle textStyle11sB(BuildContext context) => TextStyle(
     fontWeight: FontWeight.w400,
     fontSize: getResponsiveFontSize(context, fontSize: 11),
-    color: AppColors.darkgray,
+    color: AppColors.gray,
   );
 
   static TextStyle textStyle30B(BuildContext context) => TextStyle(

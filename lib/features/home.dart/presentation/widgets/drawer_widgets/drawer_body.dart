@@ -10,25 +10,30 @@ class DrawerBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Expanded(
-      flex: 2,
-      child: Container(
-        width: MediaQuery.sizeOf(context).width * .7,
-        color: Colors.white,
-        child: CustomScrollView(
-          slivers: [
-            SliverToBoxAdapter(child: SizedBox(height: 16)),
-            SliverToBoxAdapter(child: CustomUserAvatar()),
-            SliverToBoxAdapter(child: SizedBox(height: 16)),
+      flex: 1,
+      child: Card(
+        child: Container(
+          decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.horizontal(right: Radius.circular(16)),
+          ),
+          width: MediaQuery.sizeOf(context).width * .7,
+          child: CustomScrollView(
+            slivers: [
+              SliverToBoxAdapter(child: SizedBox(height: 16)),
+              SliverToBoxAdapter(child: CustomUserAvatar()),
+              SliverToBoxAdapter(child: SizedBox(height: 16)),
 
-            SliverToBoxAdapter(
-              child: Text(
-                "${S.of(context).welcome} , Fruit Market",
-                style: AppTextSyles.textStyle22B(context),
+              SliverToBoxAdapter(
+                child: Text(
+                  "${S.of(context).welcome} , Fruit Market",
+                  style: AppTextSyles.textStyle22B(context),
+                ),
               ),
-            ),
-            SliverToBoxAdapter(child: SizedBox(height: 16)),
-            DrawerItems(),
-          ],
+              SliverToBoxAdapter(child: SizedBox(height: 16)),
+              DrawerItems(),
+            ],
+          ),
         ),
       ),
     );

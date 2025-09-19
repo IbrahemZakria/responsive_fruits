@@ -131,7 +131,44 @@
   "@about_us": {},
   
   "terms_conditions": "الشروط والأحكام",
-  "@terms_conditions": {}
+  "@terms_conditions": {},
+  
+  "delivered_to": "التسليم إلى",
+  "@delivered_to": {},
+  "category": "الفئة",
+"@category": {},
+"products": "المنتجات",
+"@products": {},
+
+
+  "delivery_charges": "رسوم التوصيل :",
+  "@delivery_charges": {},
+
+  "all_areas": "كل المناطق",
+  "@all_areas": {},
+
+  "offers": "العروض",
+  "@offers": {},
+
+  "free_delivery": "توصيل مجاني",
+  "@free_delivery": {},
+
+  "apply_filter": "تطبيق الفلتر",
+  "@apply_filter": {},
+
+  "close": "إغلاق",
+  "@close": {},
+
+  "filter_by": "تصفية حسب",
+  "@filter_by": {},
+
+  "km": "كم",
+  "@km": {},
+
+  "open": "فتح",
+  "@open": {}
+
+
 
 
 

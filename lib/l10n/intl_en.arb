@@ -135,8 +135,43 @@
   "@about_us": {},
   
   "terms_conditions": "Terms & Conditions",
-  "@terms_conditions": {}
+  "@terms_conditions": {},
 
+"category": "Category",
+"@category": {},
+
+"products": "Products",
+"@products": {},
+
+  "delivered_to": "Delivered To",
+  "@delivered_to": {},
+
+  "delivery_charges": "Delivery Charges :",
+  "@delivery_charges": {},
+
+  "all_areas": "All Areas",
+  "@all_areas": {},
+
+  "offers": "Offers",
+  "@offers": {},
+
+  "free_delivery": "Free Delivery",
+  "@free_delivery": {},
+
+  "apply_filter": "Apply Filter",
+  "@apply_filter": {},
+
+  "close": "Close",
+  "@close": {},
+
+  "filter_by": "Filter by",
+  "@filter_by": {},
+
+  "km": "km",
+  "@km": {},
+
+  "open": "Open",
+  "@open": {}
 
 
 

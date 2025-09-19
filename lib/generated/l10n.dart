@@ -509,6 +509,126 @@ class S {
       args: [],
     );
   }
+
+  /// `Category`
+  String get category {
+    return Intl.message(
+      'Category',
+      name: 'category',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Products`
+  String get products {
+    return Intl.message(
+      'Products',
+      name: 'products',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Delivered To`
+  String get delivered_to {
+    return Intl.message(
+      'Delivered To',
+      name: 'delivered_to',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Delivery Charges :`
+  String get delivery_charges {
+    return Intl.message(
+      'Delivery Charges :',
+      name: 'delivery_charges',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `All Areas`
+  String get all_areas {
+    return Intl.message(
+      'All Areas',
+      name: 'all_areas',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Offers`
+  String get offers {
+    return Intl.message(
+      'Offers',
+      name: 'offers',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Free Delivery`
+  String get free_delivery {
+    return Intl.message(
+      'Free Delivery',
+      name: 'free_delivery',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Apply Filter`
+  String get apply_filter {
+    return Intl.message(
+      'Apply Filter',
+      name: 'apply_filter',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Close`
+  String get close {
+    return Intl.message(
+      'Close',
+      name: 'close',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Filter by`
+  String get filter_by {
+    return Intl.message(
+      'Filter by',
+      name: 'filter_by',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `km`
+  String get km {
+    return Intl.message(
+      'km',
+      name: 'km',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Open`
+  String get open {
+    return Intl.message(
+      'Open',
+      name: 'open',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

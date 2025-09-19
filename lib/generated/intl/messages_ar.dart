@@ -23,14 +23,21 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "about_us": MessageLookupByLibrary.simpleMessage("من نحن"),
+        "all_areas": MessageLookupByLibrary.simpleMessage("كل المناطق"),
         "already_have_account":
             MessageLookupByLibrary.simpleMessage("لديك حساب بالفعل؟"),
         "already_member": MessageLookupByLibrary.simpleMessage("عضو بالفعل؟"),
         "and_our": MessageLookupByLibrary.simpleMessage(" و "),
+        "apply_filter": MessageLookupByLibrary.simpleMessage("تطبيق الفلتر"),
         "by_continue_agree":
             MessageLookupByLibrary.simpleMessage("بمتابعتك، فإنك توافق على"),
+        "category": MessageLookupByLibrary.simpleMessage("الفئة"),
+        "close": MessageLookupByLibrary.simpleMessage("إغلاق"),
         "confirm": MessageLookupByLibrary.simpleMessage("تأكيد"),
+        "delivered_to": MessageLookupByLibrary.simpleMessage("التسليم إلى"),
         "delivery_arrived": MessageLookupByLibrary.simpleMessage("تم التوصيل"),
+        "delivery_charges":
+            MessageLookupByLibrary.simpleMessage("رسوم التوصيل :"),
         "donot_have_account":
             MessageLookupByLibrary.simpleMessage("ليس لديك حساب؟"),
         "e_shopping": MessageLookupByLibrary.simpleMessage("تسوق إلكتروني"),
@@ -41,12 +48,15 @@ class MessageLookup extends MessageLookupByLibrary {
             "استكشف الفواكه العضوية واحصل عليها"),
         "fast_payment": MessageLookupByLibrary.simpleMessage("دفع سريع"),
         "favorites": MessageLookupByLibrary.simpleMessage("المفضلة"),
+        "filter_by": MessageLookupByLibrary.simpleMessage("تصفية حسب"),
         "first_and_last_name":
             MessageLookupByLibrary.simpleMessage("الاسم الأول واسم العائلة"),
         "forget_password":
             MessageLookupByLibrary.simpleMessage("نسيت كلمة المرور؟"),
+        "free_delivery": MessageLookupByLibrary.simpleMessage("توصيل مجاني"),
         "full_name": MessageLookupByLibrary.simpleMessage("الاسم الكامل"),
         "get_started": MessageLookupByLibrary.simpleMessage("ابدأ"),
+        "km": MessageLookupByLibrary.simpleMessage("كم"),
         "language": MessageLookupByLibrary.simpleMessage("اللغة"),
         "login": MessageLookupByLibrary.simpleMessage(" تسجيل الدخول "),
         "login_to_wikala":
@@ -54,6 +64,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "mobile_number": MessageLookupByLibrary.simpleMessage("رقم الجوال"),
         "next": MessageLookupByLibrary.simpleMessage("التالي"),
         "not_received": MessageLookupByLibrary.simpleMessage("لم يصلك الرمز؟"),
+        "offers": MessageLookupByLibrary.simpleMessage("العروض"),
+        "open": MessageLookupByLibrary.simpleMessage("فتح"),
         "order_arrived_place":
             MessageLookupByLibrary.simpleMessage("تم توصيل الطلب إلى مكانك"),
         "password": MessageLookupByLibrary.simpleMessage("كلمة المرور"),
@@ -62,6 +74,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("رقم الهاتف مع واتساب"),
         "privacy_policy":
             MessageLookupByLibrary.simpleMessage("سياسة الخصوصية"),
+        "products": MessageLookupByLibrary.simpleMessage("المنتجات"),
         "profile": MessageLookupByLibrary.simpleMessage("الحساب"),
         "quick_secure_checkout":
             MessageLookupByLibrary.simpleMessage("عملية دفع سريعة وآمنة"),
