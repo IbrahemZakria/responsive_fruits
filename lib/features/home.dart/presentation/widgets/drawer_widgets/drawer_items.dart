@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:responsive_fruits/core/utils/assets.dart';
 import 'package:responsive_fruits/features/home.dart/data/models/drawer_item_model.dart';
 import 'package:responsive_fruits/features/home.dart/presentation/widgets/drawer_widgets/drawer_item.dart';
+import 'package:responsive_fruits/features/home.dart/presentation/widgets/drawer_widgets/language_dialog.dart';
 import 'package:responsive_fruits/generated/l10n.dart';
 
 class DrawerItems extends StatefulWidget {
@@ -29,7 +30,9 @@ class _DrawerItemsState extends State<DrawerItems> {
       DrawerItemModel(
         titel: S.of(context).language,
         image: Assets.resourceImagesGlobalLanguage,
-        onTap: () {},
+        onTap: () {
+          showLanguageDialog(context);
+        },
       ),
       DrawerItemModel(
         titel: S.of(context).support,

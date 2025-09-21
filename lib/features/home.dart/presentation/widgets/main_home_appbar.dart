@@ -4,7 +4,6 @@ import 'package:flutter_svg/svg.dart';
 import 'package:responsive_fruits/core/utils/assets.dart';
 import 'package:responsive_fruits/core/utils/helper/thems/app_text_syles.dart';
 import 'package:responsive_fruits/features/home.dart/presentation/cubit/home_cubit.dart';
-import 'package:responsive_fruits/features/home.dart/presentation/cubit/home_state.dart';
 import 'package:responsive_fruits/features/home.dart/presentation/widgets/home/custom_show_dialog.dart';
 
 class MainHomeAppbar extends StatelessWidget implements PreferredSizeWidget {
@@ -22,7 +21,7 @@ class MainHomeAppbar extends StatelessWidget implements PreferredSizeWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocBuilder<HomeCubit, HomeState>(
+    return BlocBuilder<HomeCubit, int>(
       builder: (context, state) {
         return AppBar(
           leadingWidth: 100,

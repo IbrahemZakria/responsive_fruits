@@ -12,6 +12,8 @@ class Assets {
 
   static const String resourceImagesBlueberries = "assets/images/Blueberries.png";
 
+  static const String resourceImagesCartIcon = "assets/images/cart_icon.svg";
+
   static const String resourceImagesCherries = "assets/images/Cherries.png";
 
   static const String resourceImagesCoconuts = "assets/images/Coconuts.png";
@@ -26,7 +28,11 @@ class Assets {
 
   static const String resourceImagesGoogel = "assets/images/googel.svg";
 
+  static const String resourceImagesHomeIcon = "assets/images/home_icon.svg";
+
   static const String resourceImagesOmboarding = "assets/images/omboarding.svg";
+
+  static const String resourceImagesOrdersIcon = "assets/images/orders_icon.svg";
 
   static const String resourceImagesPeaches = "assets/images/Peaches.png";
 

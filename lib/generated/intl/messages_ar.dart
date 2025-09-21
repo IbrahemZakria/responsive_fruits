@@ -42,6 +42,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "basket": MessageLookupByLibrary.simpleMessage("السله"),
         "by_continue_agree":
             MessageLookupByLibrary.simpleMessage("بمتابعتك، فإنك توافق على"),
+        "canceled": MessageLookupByLibrary.simpleMessage("ملغي"),
         "cartItemsCount": m0,
         "cashOnDelivery":
             MessageLookupByLibrary.simpleMessage("الدفع عند الاستلام"),
@@ -54,7 +55,9 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("متابعة التسوق"),
         "couponCode": MessageLookupByLibrary.simpleMessage("كود الخصم"),
         "creditCard": MessageLookupByLibrary.simpleMessage("بطاقة ائتمان/خصم"),
+        "delivered": MessageLookupByLibrary.simpleMessage("تم التوصيل"),
         "delivered_to": MessageLookupByLibrary.simpleMessage("التسليم إلى"),
+        "delivering": MessageLookupByLibrary.simpleMessage("قيد التوصيل"),
         "deliveryAddress":
             MessageLookupByLibrary.simpleMessage("عنوان التوصيل"),
         "deliveryTime": MessageLookupByLibrary.simpleMessage("وقت التوصيل"),
@@ -73,6 +76,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "fast_payment": MessageLookupByLibrary.simpleMessage("دفع سريع"),
         "favorites": MessageLookupByLibrary.simpleMessage("المفضلة"),
         "filter_by": MessageLookupByLibrary.simpleMessage("تصفية حسب"),
+        "finished": MessageLookupByLibrary.simpleMessage("مكتمل"),
         "first_and_last_name":
             MessageLookupByLibrary.simpleMessage("الاسم الأول واسم العائلة"),
         "floor_apartment": MessageLookupByLibrary.simpleMessage("الدور/الشقة"),
@@ -89,7 +93,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "login_to_wikala":
             MessageLookupByLibrary.simpleMessage("تسجيل الدخول إلى ويكالا"),
         "mobile_number": MessageLookupByLibrary.simpleMessage("رقم الجوال"),
+        "myOrders": MessageLookupByLibrary.simpleMessage("طلباتي"),
         "name": MessageLookupByLibrary.simpleMessage("الاسم"),
+        "newOrder": MessageLookupByLibrary.simpleMessage("جديد"),
         "next": MessageLookupByLibrary.simpleMessage("التالي"),
         "not_received": MessageLookupByLibrary.simpleMessage("لم يصلك الرمز؟"),
         "now": MessageLookupByLibrary.simpleMessage("الآن"),
@@ -160,6 +166,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "trackOrder": MessageLookupByLibrary.simpleMessage("تتبع الطلب"),
         "welcome": MessageLookupByLibrary.simpleMessage("مرحبًا"),
         "welcome_to_app":
-            MessageLookupByLibrary.simpleMessage("مرحبًا بك في تطبيقنا")
+            MessageLookupByLibrary.simpleMessage("مرحبًا بك في تطبيقنا"),
+        "working": MessageLookupByLibrary.simpleMessage("جاري التنفيذ")
       };
 }

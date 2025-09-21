@@ -304,7 +304,28 @@
   "@phone": {},
 
   "please_enter_phone": "من فضلك أدخل رقم الهاتف",
-  "@please_enter_phone": {}
+  "@please_enter_phone": {},
+  "myOrders": "طلباتي",
+"@myOrders": {},
+"delivering": "قيد التوصيل",
+"@delivering": {},
+
+"finished": "مكتمل",
+"@finished": {},
+
+"canceled": "ملغي",
+"@canceled": {},
+
+"working": "جاري التنفيذ",
+"@working": {},
+
+"delivered": "تم التوصيل",
+"@delivered": {},
+
+"newOrder": "جديد",
+"@newOrder": {}
+
+
 }
 
 

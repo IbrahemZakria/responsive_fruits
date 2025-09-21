@@ -913,6 +913,16 @@ class S {
     );
   }
 
+  /// `My Orders`
+  String get myOrders {
+    return Intl.message(
+      'My Orders',
+      name: 'myOrders',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Name`
   String get name {
     return Intl.message(
@@ -1028,6 +1038,66 @@ class S {
     return Intl.message(
       'Please enter phone number',
       name: 'please_enter_phone',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Delivering`
+  String get delivering {
+    return Intl.message(
+      'Delivering',
+      name: 'delivering',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Finished`
+  String get finished {
+    return Intl.message(
+      'Finished',
+      name: 'finished',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Canceled`
+  String get canceled {
+    return Intl.message(
+      'Canceled',
+      name: 'canceled',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Working`
+  String get working {
+    return Intl.message(
+      'Working',
+      name: 'working',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Delivered`
+  String get delivered {
+    return Intl.message(
+      'Delivered',
+      name: 'delivered',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `New`
+  String get newOrder {
+    return Intl.message(
+      'New',
+      name: 'newOrder',
       desc: '',
       args: [],
     );

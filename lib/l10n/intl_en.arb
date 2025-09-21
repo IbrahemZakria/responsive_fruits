@@ -273,7 +273,9 @@
     }
   }
 
-,
+,"myOrders": "My Orders",
+"@myOrders": {},
+
   "name": "Name",
   "@name": {},
 
@@ -308,7 +310,26 @@
   "@phone": {},
 
   "please_enter_phone": "Please enter phone number",
-  "@please_enter_phone": {}
+  "@please_enter_phone": {},
+  
+"delivering": "Delivering",
+"@delivering": {},
+
+"finished": "Finished",
+"@finished": {},
+
+"canceled": "Canceled",
+"@canceled": {},
+
+"working": "Working",
+"@working": {},
+
+"delivered": "Delivered",
+"@delivered": {},
+
+"newOrder": "New",
+"@newOrder": {}
+
 
 
 

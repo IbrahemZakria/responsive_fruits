@@ -44,6 +44,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "basket": MessageLookupByLibrary.simpleMessage("Basket"),
         "by_continue_agree": MessageLookupByLibrary.simpleMessage(
             "By continuing, you agree to our"),
+        "canceled": MessageLookupByLibrary.simpleMessage("Canceled"),
         "cartItemsCount": m0,
         "cashOnDelivery":
             MessageLookupByLibrary.simpleMessage("Cash on Delivery"),
@@ -57,7 +58,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "couponCode": MessageLookupByLibrary.simpleMessage("Coupon Code"),
         "creditCard":
             MessageLookupByLibrary.simpleMessage("Credit Card/Debit Card"),
+        "delivered": MessageLookupByLibrary.simpleMessage("Delivered"),
         "delivered_to": MessageLookupByLibrary.simpleMessage("Delivered To"),
+        "delivering": MessageLookupByLibrary.simpleMessage("Delivering"),
         "deliveryAddress":
             MessageLookupByLibrary.simpleMessage("Delivery Address"),
         "deliveryTime": MessageLookupByLibrary.simpleMessage("Delivery Time"),
@@ -78,6 +81,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "fast_payment": MessageLookupByLibrary.simpleMessage("Fast Payment"),
         "favorites": MessageLookupByLibrary.simpleMessage("Favorites"),
         "filter_by": MessageLookupByLibrary.simpleMessage("Filter by"),
+        "finished": MessageLookupByLibrary.simpleMessage("Finished"),
         "first_and_last_name":
             MessageLookupByLibrary.simpleMessage("First and Last Name"),
         "floor_apartment":
@@ -96,7 +100,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "login_to_wikala":
             MessageLookupByLibrary.simpleMessage("Login to Wikala"),
         "mobile_number": MessageLookupByLibrary.simpleMessage("Mobile Number"),
+        "myOrders": MessageLookupByLibrary.simpleMessage("My Orders"),
         "name": MessageLookupByLibrary.simpleMessage("Name"),
+        "newOrder": MessageLookupByLibrary.simpleMessage("New"),
         "next": MessageLookupByLibrary.simpleMessage("Next"),
         "not_received": MessageLookupByLibrary.simpleMessage("Not received?"),
         "now": MessageLookupByLibrary.simpleMessage("Now"),
@@ -168,6 +174,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "trackOrder": MessageLookupByLibrary.simpleMessage("Track Order"),
         "welcome": MessageLookupByLibrary.simpleMessage("Welcome"),
         "welcome_to_app":
-            MessageLookupByLibrary.simpleMessage("Welcome to Our App")
+            MessageLookupByLibrary.simpleMessage("Welcome to Our App"),
+        "working": MessageLookupByLibrary.simpleMessage("Working")
       };
 }
