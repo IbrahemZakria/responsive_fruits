@@ -28,7 +28,6 @@ class SignUpBottom extends StatelessWidget {
                 recognizer: TapGestureRecognizer()
                   ..onTap = () {
                     Navigator.pushNamed(context, SignIn.routeName);
-                    print("Sign In tapped!");
                   },
               ),
             ],

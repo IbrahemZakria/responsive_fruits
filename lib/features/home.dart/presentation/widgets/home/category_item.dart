@@ -7,24 +7,26 @@ class CategoryItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        Card(
-          child: FittedBox(
-            child: Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Image.asset(
-                model.image,
-                fit: BoxFit.contain,
-                width: 100,
-                height: 100,
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          SizedBox(
+            width: 100,
+            height: 100,
+            child: Card(
+              child: FittedBox(
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Image.asset(model.image, fit: BoxFit.contain),
+                ),
               ),
             ),
           ),
-        ),
-        Text(model.name),
-      ],
+          Text(model.name),
+        ],
+      ),
     );
   }
 }

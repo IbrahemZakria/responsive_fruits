@@ -166,11 +166,152 @@
   "@km": {},
 
   "open": "فتح",
-  "@open": {}
+  "@open": {},
+  "basket":"السله",
+  "@basket": {}
+  ,
+  "paymentAmount": "الدفع {amount} جنيه",
+  "@paymentAmount": {
+    "description": "رسالة الدفع مع المبلغ المتغير",
+    "placeholders": {
+      "amount": {
+        "type": "double",
+        "example": "120"
+      }
+    }},
+  "cartItemsCount": "{count, plural, =0{سلة التسوق فارغة} =1{لديك منتج واحد في سلة التسوق} =2{لديك منتجان في سلة التسوق} few{لديك {count} منتجات في سلة التسوق} other{لديك {count} منتج في سلة التسوق}}"
+,      "@cartItemsCount": {
+            "placeholders": {
+                  "count": {}
+            }
 
 
+              },
+  "checkout": "الدفع",
+  "@checkout": {},
 
+  "deliveryTime": "وقت التوصيل",
+  "@deliveryTime": {},
 
+  "deliveryAddress": "عنوان التوصيل",
+  "@deliveryAddress": {},
 
+  "payment": "الدفع",
+  "@payment": {},
 
+  "now": "الآن",
+  "@now": {},
+
+  "selectDeliveryTime": "اختر وقت التوصيل",
+  "@selectDeliveryTime": {},
+
+  "selectDate": "اختر التاريخ",
+  "@selectDate": {},
+
+  "selectDeliveryAddress": "اختر عنوان التوصيل",
+  "@selectDeliveryAddress": {},
+
+  "addNewAddress": "أضف عنوان جديد",
+  "@addNewAddress": {},
+
+  "couponCode": "كود الخصم",
+  "@couponCode": {},
+
+  "haveCoupon": "هل لديك كود خصم؟",
+  "@haveCoupon": {},
+
+  "orderDetails": "تفاصيل الطلب",
+  "@orderDetails": {},
+
+  "totalItems": "إجمالي العناصر",
+  "@totalItems": {},
+
+  "subtotal": "الإجمالي الفرعي",
+  "@subtotal": {},
+
+  "shippingCharges": "مصاريف الشحن",
+  "@shippingCharges": {},
+
+  "bagTotal": "إجمالي الحقيبة",
+  "@bagTotal": {},
+
+  "creditCard": "بطاقة ائتمان/خصم",
+  "@creditCard": {},
+
+  "cashOnDelivery": "الدفع عند الاستلام",
+  "@cashOnDelivery": {},
+
+  "knet": "كي نت",
+  "@knet": {},
+
+  "placeOrder": "إتمام الطلب",
+  "@placeOrder": {},
+
+  "orderConfirmed": "تم تأكيد طلبك!",
+  "@orderConfirmed": {},
+
+  "thankYou": "شكرًا لاختيارك منتجاتنا!",
+  "@thankYou": {},
+
+  "continueShopping": "متابعة التسوق",
+  "@continueShopping": {},
+
+  "trackOrder": "تتبع الطلب",
+  "@trackOrder": {},
+
+  "orderCode": "كود الطلب الخاص بك: #{code}",
+  "@orderCode": {
+    "description": "رسالة تأكيد الطلب تحتوي على كود الطلب",
+    "placeholders": {
+      "code": {
+        "type": "String",
+        "example": "243188"
+      }
+    }
+  }
+,
+  "name": "الاسم",
+  "@name": {},
+
+  "please_enter_your_name": "من فضلك أدخل اسمك",
+  "@please_enter_your_name": {},
+
+  "email": "البريد الإلكتروني",
+  "@email": {},
+
+  "please_enter_your_email": "من فضلك أدخل البريد الإلكتروني",
+  "@please_enter_your_email": {},
+
+  "address": "العنوان",
+  "@address": {},
+
+  "please_enter_address": "من فضلك أدخل العنوان",
+  "@please_enter_address": {},
+
+  "city": "المدينة",
+  "@city": {},
+
+  "please_enter_city": "من فضلك أدخل المدينة",
+  "@please_enter_city": {},
+
+  "floor_apartment": "الدور/الشقة",
+  "@floor_apartment": {},
+
+  "please_enter_floor_apartment": "من فضلك أدخل الدور/الشقة",
+  "@please_enter_floor_apartment": {},
+
+  "phone": "رقم الهاتف",
+  "@phone": {},
+
+  "please_enter_phone": "من فضلك أدخل رقم الهاتف",
+  "@please_enter_phone": {}
 }
+
+
+    
+
+
+
+
+
+

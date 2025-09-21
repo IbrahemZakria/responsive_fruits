@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:badges/badges.dart' as badges;
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:responsive_fruits/features/home.dart/presentation/cubit/cart_cubit/cart_cubit.dart';
 import 'package:responsive_fruits/features/home.dart/presentation/cubit/home_cubit.dart';
+import 'package:responsive_fruits/features/home.dart/presentation/pages/cart_page.dart';
 import 'package:responsive_fruits/features/home.dart/presentation/pages/home_page_body.dart';
 
 class MainHomePage extends StatefulWidget {
@@ -43,7 +46,7 @@ class MainHomePageState extends State<MainHomePage> {
       body: Stack(
         children: [
           _buildTabNavigator(HomePageBody(), 0),
-          _buildTabNavigator(const Center(child: Text("Cart Page 🛒")), 1),
+          _buildTabNavigator(CartPage(), 1),
           _buildTabNavigator(const Center(child: Text("Favorites Page 🛒")), 2),
           _buildTabNavigator(const Center(child: Text("Profile Page 👤")), 3),
         ],
@@ -53,10 +56,27 @@ class MainHomePageState extends State<MainHomePage> {
         onTap: _selectTab,
         selectedItemColor: Colors.green,
         unselectedItemColor: Colors.grey,
-        items: const [
+        items: [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
           BottomNavigationBarItem(
-            icon: Icon(Icons.shopping_cart),
+            icon: badges.Badge(
+              badgeStyle: badges.BadgeStyle(badgeColor: Colors.green),
+              showBadge: context
+                  .read<CartCubit>()
+                  .cartEntity
+                  .cartProducts
+                  .isNotEmpty,
+              badgeContent: Text(
+                context
+                    .watch<CartCubit>()
+                    .cartEntity
+                    .cartProducts
+                    .length
+                    .toString(),
+                style: const TextStyle(color: Colors.white, fontSize: 10),
+              ),
+              child: Icon(Icons.shopping_cart),
+            ),
             label: "Cart",
           ),
           BottomNavigationBarItem(

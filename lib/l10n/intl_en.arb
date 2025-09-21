@@ -171,8 +171,144 @@
   "@km": {},
 
   "open": "Open",
-  "@open": {}
+  "@open": {},
+  "basket":"Basket",
+  "@basket": {},
+  "paymentAmount": "Payment {amount} EGP",
+  "@paymentAmount": {
+    "description": "Payment message with variable amount",
+    "placeholders": {
+      "amount": {
+        "type": "double",
+        "example": "120"
+      }
+    }},
+  "cartItemsCount": "{count, plural, =0{Your cart is empty} =1{You have 1 item in your shopping cart} other{You have {count} items in your shopping cart}}"
+ , "@cartItemsCount": {
+            "placeholders": {
+                  "count": {}
+            }}
 
+,
+  "checkout": "Checkout",
+  "@checkout": {},
+
+  "deliveryTime": "Delivery Time",
+  "@deliveryTime": {},
+
+  "deliveryAddress": "Delivery Address",
+  "@deliveryAddress": {},
+
+  "payment": "Payment",
+  "@payment": {},
+
+  "now": "Now",
+  "@now": {},
+
+  "selectDeliveryTime": "Select Delivery Time",
+  "@selectDeliveryTime": {},
+
+  "selectDate": "Select Date",
+  "@selectDate": {},
+
+  "selectDeliveryAddress": "Select Delivery Address",
+  "@selectDeliveryAddress": {},
+
+  "addNewAddress": "Add New Address",
+  "@addNewAddress": {},
+
+  "couponCode": "Coupon Code",
+  "@couponCode": {},
+
+  "haveCoupon": "Do You Have any Coupon Code?",
+  "@haveCoupon": {},
+
+  "orderDetails": "Order Details",
+  "@orderDetails": {},
+
+  "totalItems": "Total Items",
+  "@totalItems": {},
+
+  "subtotal": "Subtotal",
+  "@subtotal": {},
+
+  "shippingCharges": "Shipping Charges",
+  "@shippingCharges": {},
+
+  "bagTotal": "Bag Total",
+  "@bagTotal": {},
+
+  "creditCard": "Credit Card/Debit Card",
+  "@creditCard": {},
+
+  "cashOnDelivery": "Cash on Delivery",
+  "@cashOnDelivery": {},
+
+  "knet": "Knet",
+  "@knet": {},
+
+  "placeOrder": "Place Order",
+  "@placeOrder": {},
+
+  "orderConfirmed": "YOUR ORDER IS CONFIRMED!",
+  "@orderConfirmed": {},
+
+  "thankYou": "Thank you for choosing our products!",
+  "@thankYou": {},
+
+  "continueShopping": "Continue Shopping",
+  "@continueShopping": {},
+
+  "trackOrder": "Track Order",
+  "@trackOrder": {},
+
+  "orderCode": "Your order code: #{code}",
+  "@orderCode": {
+    "description": "Order confirmation message with order code",
+    "placeholders": {
+      "code": {
+        "type": "String",
+        "example": "243188"
+      }
+    }
+  }
+
+,
+  "name": "Name",
+  "@name": {},
+
+  "please_enter_your_name": "Please enter your name",
+  "@please_enter_your_name": {},
+
+  "email": "Email",
+  "@email": {},
+
+  "please_enter_your_email": "Please enter your email",
+  "@please_enter_your_email": {},
+
+  "address": "Address",
+  "@address": {},
+
+  "please_enter_address": "Please enter address",
+  "@please_enter_address": {},
+
+  "city": "City",
+  "@city": {},
+
+  "please_enter_city": "Please enter city",
+  "@please_enter_city": {},
+
+  "floor_apartment": "Floor/Apartment",
+  "@floor_apartment": {},
+
+  "please_enter_floor_apartment": "Please enter floor/apartment",
+  "@please_enter_floor_apartment": {},
+
+  "phone": "Phone",
+  "@phone": {},
+
+  "please_enter_phone": "Please enter phone number",
+  "@please_enter_phone": {}
 
 
 

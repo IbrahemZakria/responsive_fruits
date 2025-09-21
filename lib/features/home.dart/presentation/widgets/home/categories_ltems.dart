@@ -32,7 +32,7 @@ class CategoriesLtems extends StatelessWidget {
       constraints: BoxConstraints(maxHeight: 200, minHeight: 50),
 
       child: SizedBox(
-        height: MediaQuery.sizeOf(context).height * .2,
+        height: 150,
         child: ListView.separated(
           scrollDirection: Axis.horizontal,
           itemBuilder: (context, index) {

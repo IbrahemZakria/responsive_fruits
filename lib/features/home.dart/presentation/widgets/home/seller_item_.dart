@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:responsive_fruits/core/utils/helper/thems/app_text_syles.dart';
 import 'package:responsive_fruits/features/home.dart/domain/entities/seller_entity.dart';
-import 'package:responsive_fruits/features/home.dart/presentation/cubit/home_cubit.dart';
 import 'package:responsive_fruits/features/home.dart/presentation/pages/seller_products_page.dart';
 import 'package:responsive_fruits/generated/l10n.dart';
 
@@ -20,7 +18,6 @@ class SellerItem extends StatelessWidget {
             builder: (_) => SellerProductsPage(sellerName: "sellerName"),
           ),
         );
-        context.read<HomeCubit>().rebuild();
       },
       child: Card(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),

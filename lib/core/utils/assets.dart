@@ -43,5 +43,7 @@ class Assets {
   static const String resourceImagesSupport = "assets/images/support.svg";
 
   static const String resourceImagesTermsConditon = "assets/images/terms_conditon.svg";
+
+  static const String resourceImagesTrash = "assets/images/trash.svg";
 }
 

@@ -50,6 +50,7 @@ class SellerProductsPage extends StatelessWidget {
             SliverToBoxAdapter(child: Text(S.of(context).category)),
 
             SliverToBoxAdapter(child: CategoriesLtems()),
+
             SliverToBoxAdapter(
               child: Row(
                 children: [
