@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:responsive_fruits/core/utils/assets.dart';
-import 'package:responsive_fruits/features/home.dart/presentation/widgets/drawer_widgets/drawer_body.dart';
 import 'package:responsive_fruits/features/home.dart/presentation/widgets/home/categories_ltems.dart';
 import 'package:responsive_fruits/features/home.dart/presentation/widgets/home/custom_cursor_slider.dart';
 import 'package:responsive_fruits/features/home.dart/presentation/widgets/main_home_appbar.dart';
@@ -18,29 +17,7 @@ class SellerProductsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       key: scaffoldKey,
-      drawer: MediaQuery.sizeOf(context).width < 1024 ? DrawerBody() : null,
-      appBar: MainHomeAppbar(
-        filter: true,
-        leading: MediaQuery.sizeOf(context).width < 1024
-            ? Row(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  IconButton(
-                    onPressed: () {
-                      Navigator.pop(context);
-                    },
-                    icon: Icon(Icons.arrow_back_ios_new),
-                  ),
-                  IconButton(
-                    onPressed: () {
-                      scaffoldKey.currentState?.openDrawer();
-                    },
-                    icon: Icon(Icons.menu),
-                  ),
-                ],
-              )
-            : null,
-      ),
+      appBar: MainHomeAppbar(filter: true),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: CustomScrollView(

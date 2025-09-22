@@ -30,20 +30,27 @@ class CartCard extends StatelessWidget {
         child: IntrinsicHeight(
           child: Row(
             children: [
-              Container(
+              SizedBox(
                 width: size.width * .19,
-                color: AppColors.lightgray,
-                child: Center(
+                height: 80,
+
+                child: ClipRRect(
+                  borderRadius: const BorderRadius.only(
+                    bottomLeft: Radius.circular(8),
+                    topLeft: Radius.circular(8),
+                  ),
                   child: CachedNetworkImage(
                     width: size.width * .14,
-                    fit: BoxFit.fitHeight,
-                    imageUrl: cartItemEntity.productEntity.imageUrl!,
+                    fit: BoxFit.cover,
+                    imageUrl:
+                        "https://www.bigfootdigital.co.uk/wp-content/uploads/2020/07/image-optimisation-scaled.jpg",
                     placeholder: (context, url) => Center(
                       child: CircularProgressIndicator(
                         color: AppColors.kprimarycolor,
                       ),
                     ),
-                    errorWidget: (context, url, error) => Icon(Icons.error),
+                    errorWidget: (context, url, error) =>
+                        const Icon(Icons.error),
                   ),
                 ),
               ),

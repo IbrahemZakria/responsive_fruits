@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_fruits/features/home.dart/presentation/widgets/drawer_widgets/drawer_body.dart';
 import 'package:responsive_fruits/features/home.dart/presentation/widgets/home/custom_cursor_slider.dart';
 import 'package:responsive_fruits/features/home.dart/presentation/widgets/home/seller_items.dart';
 import 'package:responsive_fruits/features/home.dart/presentation/widgets/main_home_appbar.dart';
@@ -10,8 +9,6 @@ class HomePageBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: MediaQuery.sizeOf(context).width < 1024 ? DrawerBody() : null,
-
       appBar: MainHomeAppbar(),
       body: Padding(
         padding: const EdgeInsets.all(8.0),

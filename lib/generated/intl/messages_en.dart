@@ -93,13 +93,16 @@ class MessageLookup extends MessageLookupByLibrary {
         "get_started": MessageLookupByLibrary.simpleMessage("Get Started"),
         "haveCoupon": MessageLookupByLibrary.simpleMessage(
             "Do You Have any Coupon Code?"),
+        "home": MessageLookupByLibrary.simpleMessage("Home"),
         "km": MessageLookupByLibrary.simpleMessage("km"),
         "knet": MessageLookupByLibrary.simpleMessage("Knet"),
         "language": MessageLookupByLibrary.simpleMessage("Language"),
         "login": MessageLookupByLibrary.simpleMessage(" Login "),
         "login_to_wikala":
             MessageLookupByLibrary.simpleMessage("Login to Wikala"),
+        "message": MessageLookupByLibrary.simpleMessage("Message"),
         "mobile_number": MessageLookupByLibrary.simpleMessage("Mobile Number"),
+        "more": MessageLookupByLibrary.simpleMessage("More"),
         "myOrders": MessageLookupByLibrary.simpleMessage("My Orders"),
         "name": MessageLookupByLibrary.simpleMessage("Name"),
         "newOrder": MessageLookupByLibrary.simpleMessage("New"),
@@ -114,6 +117,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "orderDetails": MessageLookupByLibrary.simpleMessage("Order Details"),
         "order_arrived_place": MessageLookupByLibrary.simpleMessage(
             "Order has arrived at your place"),
+        "orders": MessageLookupByLibrary.simpleMessage("Orders"),
         "password": MessageLookupByLibrary.simpleMessage("Password"),
         "payment": MessageLookupByLibrary.simpleMessage("Payment"),
         "paymentAmount": m2,

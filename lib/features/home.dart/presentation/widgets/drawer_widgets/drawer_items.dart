@@ -1,6 +1,13 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:responsive_fruits/core/utils/assets.dart';
 import 'package:responsive_fruits/features/home.dart/data/models/drawer_item_model.dart';
+import 'package:responsive_fruits/features/home.dart/presentation/cubit/home_cubit.dart';
+import 'package:responsive_fruits/features/home.dart/presentation/pages/adabtive_main_home_page.dart';
+import 'package:responsive_fruits/features/home.dart/presentation/pages/contact_us_page.dart';
+import 'package:responsive_fruits/features/home.dart/presentation/pages/profile_page.dart';
 import 'package:responsive_fruits/features/home.dart/presentation/widgets/drawer_widgets/drawer_item.dart';
 import 'package:responsive_fruits/features/home.dart/presentation/widgets/drawer_widgets/language_dialog.dart';
 import 'package:responsive_fruits/generated/l10n.dart';
@@ -20,12 +27,30 @@ class _DrawerItemsState extends State<DrawerItems> {
       DrawerItemModel(
         titel: S.of(context).profile,
         image: Assets.resourceImagesPerson,
-        onTap: () {},
+        onTap: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => ProfilePage()),
+          );
+        },
       ),
       DrawerItemModel(
         titel: S.of(context).favorites,
         image: Assets.resourceImagesFavorit,
-        onTap: () {},
+        onTap: () {
+          final currentRoute = ModalRoute.of(context)?.settings.name;
+          log(currentRoute.toString());
+          if (currentRoute == AdabtiveMainHomePage.routeName) {
+            context.read<HomeCubit>().changeTab(3);
+          } else {
+            Navigator.pushNamedAndRemoveUntil(
+              context,
+              AdabtiveMainHomePage.routeName,
+              (route) => true,
+            );
+            context.read<HomeCubit>().changeTab(3);
+          }
+        },
       ),
       DrawerItemModel(
         titel: S.of(context).language,
@@ -37,12 +62,20 @@ class _DrawerItemsState extends State<DrawerItems> {
       DrawerItemModel(
         titel: S.of(context).support,
         image: Assets.resourceImagesSupport,
-        onTap: () {},
+        onTap: () {
+          Navigator.of(
+            context,
+            rootNavigator: true,
+          ).pushNamed(ContactUsPage.routeName);
+        },
       ),
       DrawerItemModel(
         titel: S.of(context).about_us,
         image: Assets.resourceImagesAboutUs,
-        onTap: () {},
+        onTap: () {
+          final currentRoute = ModalRoute.of(context)?.settings.name;
+          log(currentRoute.toString());
+        },
       ),
     ];
 

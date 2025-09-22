@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_fruits/core/utils/helper/widgets/custom_button.dart';
 import 'package:responsive_fruits/features/home.dart/domain/entities/produt_entity.dart';
-import 'package:responsive_fruits/features/home.dart/presentation/widgets/drawer_widgets/drawer_body.dart';
 import 'package:responsive_fruits/features/home.dart/presentation/widgets/home/product/product_data.dart';
 import 'package:responsive_fruits/features/home.dart/presentation/widgets/home/product/product_image_item.dart';
 import 'package:responsive_fruits/features/home.dart/presentation/widgets/home/product/selected_option.dart';
@@ -26,7 +25,6 @@ class _ProductPageState extends State<ProductPage> {
     Size size = MediaQuery.sizeOf(context);
     return Scaffold(
       key: scaffoldKey,
-      drawer: MediaQuery.sizeOf(context).width < 1024 ? DrawerBody() : null,
       appBar: MainHomeAppbar(
         titel: widget.productEntity.name,
         actions: [

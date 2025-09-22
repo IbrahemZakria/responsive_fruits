@@ -13,63 +13,70 @@ class CartPageBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
-      child: Stack(
-        children: [
-          BlocBuilder<CartCubit, CartState>(
-            builder: (context, state) {
-              return CustomScrollView(
-                slivers: [
-                  SliverToBoxAdapter(
-                    child: ProductsNumberText(
-                      number: context
-                          .read<CartCubit>()
-                          .cartEntity
-                          .cartProducts
-                          .length,
-                    ),
-                  ),
+      child: BlocBuilder<CartCubit, CartState>(
+        builder: (context, state) {
+          return CustomScrollView(
+            slivers: [
+              SliverToBoxAdapter(
+                child: ProductsNumberText(
+                  number: context
+                      .read<CartCubit>()
+                      .cartEntity
+                      .cartProducts
+                      .length,
+                ),
+              ),
 
-                  CardListView(),
-                ],
-              );
-            },
-          ),
-          Positioned(
-            right: 16,
-            left: 16,
-            bottom: 16,
-            child: CustomButton(
-              onTap: () {
-                print(
-                  S
-                      .of(context)
-                      .paymentAmount(
-                        context
+              CardListView(),
+              SliverFillRemaining(
+                hasScrollBody: false,
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    SizedBox(height: 16),
+                    CustomButton(
+                      onTap: () {
+                        print(
+                          S
+                              .of(context)
+                              .paymentAmount(
+                                context
+                                    .read<CartCubit>()
+                                    .cartEntity
+                                    .calculateTotalPrice(),
+                              ),
+                        );
+
+                        if (context
                             .read<CartCubit>()
                             .cartEntity
-                            .calculateTotalPrice(),
-                      ),
-                );
-
-                if (context
-                    .read<CartCubit>()
-                    .cartEntity
-                    .cartProducts
-                    .isNotEmpty) {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => ChekOutPage()),
-                  );
-                }
-              },
-              text: S
-                  .of(context)
-                  .paymentAmount(
-                    context.watch<CartCubit>().cartEntity.calculateTotalPrice(),
-                  ),
-            ),
-          ),
-        ],
+                            .cartProducts
+                            .isNotEmpty) {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => ChekOutPage(),
+                            ),
+                          );
+                        }
+                      },
+                      text: S
+                          .of(context)
+                          .paymentAmount(
+                            context
+                                .watch<CartCubit>()
+                                .cartEntity
+                                .calculateTotalPrice(),
+                          ),
+                    ),
+                    SizedBox(height: 16),
+                  ],
+                ),
+              ),
+            ],
+          );
+        },
       ),
     );
   }

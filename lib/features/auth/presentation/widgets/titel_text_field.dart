@@ -8,8 +8,9 @@ class TitelTextField extends StatelessWidget {
     required this.titel,
     required this.hintText,
     this.controller,
+    this.maxLines,
   });
-
+  final int? maxLines;
   final String titel;
   final String hintText;
   final TextEditingController? controller;
@@ -21,7 +22,11 @@ class TitelTextField extends StatelessWidget {
       children: [
         Text(titel, style: AppTextSyles.textStyle13re(context)),
         const SizedBox(height: 8),
-        CustomeTextFormField(hintText: hintText, controller: controller),
+        CustomeTextFormField(
+          hintText: hintText,
+          controller: controller,
+          maxLines: maxLines,
+        ),
       ],
     );
   }

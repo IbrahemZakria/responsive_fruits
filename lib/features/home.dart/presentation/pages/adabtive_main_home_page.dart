@@ -22,7 +22,7 @@ class AdabtiveMainHomePage extends StatelessWidget {
 
           desktop: (context) => Row(
             children: [
-              DrawerBody(),
+              Expanded(flex: 1, child: DrawerBody()),
               Expanded(flex: 4, child: MainHomePage()),
             ],
           ),

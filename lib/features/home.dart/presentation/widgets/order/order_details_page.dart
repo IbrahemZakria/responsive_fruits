@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_fruits/core/utils/helper/widgets/custom_button.dart';
 import 'package:responsive_fruits/features/home.dart/domain/entities/order_entity.dart';
-import 'package:responsive_fruits/features/home.dart/presentation/widgets/drawer_widgets/drawer_body.dart';
 import 'package:responsive_fruits/features/home.dart/presentation/widgets/main_home_appbar.dart';
 import 'package:responsive_fruits/features/home.dart/presentation/widgets/order/order_tracking_time_line.dart';
 import 'package:responsive_fruits/generated/l10n.dart';
@@ -14,9 +13,12 @@ class OrderDetailsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: MediaQuery.sizeOf(context).width < 1024 ? DrawerBody() : null,
-
-      appBar: MainHomeAppbar(titel: S.of(context).orderDetails, filter: false),
+      appBar: MainHomeAppbar(
+        titel: S.of(context).orderDetails,
+        filter: false,
+        leading: null,
+        actions: [],
+      ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: CustomScrollView(

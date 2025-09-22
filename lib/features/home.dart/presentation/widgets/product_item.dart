@@ -84,7 +84,12 @@ class ProductItem extends StatelessWidget {
                 child: CircleAvatar(
                   radius: 20,
                   backgroundColor: AppColors.kprimarycolor,
-                  child: SvgPicture.asset(Assets.resourceImagesBasket),
+                  child: FittedBox(
+                    child: Padding(
+                      padding: EdgeInsets.all(8),
+                      child: SvgPicture.asset(Assets.resourceImagesBasket),
+                    ),
+                  ),
                 ),
               ),
             ],

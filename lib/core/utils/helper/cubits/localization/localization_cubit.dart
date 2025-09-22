@@ -16,7 +16,6 @@ class LocalizationCubit extends Cubit<LocalizationState> {
       emit(LanguageChangedState(lang));
     } else {
       showUserMessage(message: "message");
-      emit(LanguageChangedState(lang));
     }
   }
 }

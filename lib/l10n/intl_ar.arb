@@ -323,7 +323,18 @@
 "@delivered": {},
 
 "newOrder": "جديد",
-"@newOrder": {}
+"@newOrder": {},
+"message": "رسالة",
+"@message": {},
+"home": "الرئيسية",
+  "@home": {},
+
+  "orders": "الطلبات",
+  "@orders": {},
+
+  "more": "المزيد",
+  "@more": {}
+
 
 
 }

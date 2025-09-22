@@ -1,6 +1,6 @@
 import 'package:responsive_fruits/core/utils/assets.dart';
 import 'package:responsive_fruits/features/home.dart/domain/entities/order_entity.dart';
-import 'package:responsive_fruits/features/home.dart/domain/entities/order_steps_entity';
+import 'package:responsive_fruits/features/home.dart/domain/entities/order_steps_entity.dart';
 import 'package:responsive_fruits/features/home.dart/domain/entities/produt_entity.dart';
 
 ProductEntity dumyproductEntity = ProductEntity(

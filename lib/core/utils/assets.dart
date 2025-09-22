@@ -18,9 +18,15 @@ class Assets {
 
   static const String resourceImagesCoconuts = "assets/images/Coconuts.png";
 
+  static const String resourceImagesDrawer = "assets/images/drawer.svg";
+
   static const String resourceImagesFacebook = "assets/images/facebook.svg";
 
+  static const String resourceImagesFacebookIcon = "assets/images/facebook_icon.svg";
+
   static const String resourceImagesFavorit = "assets/images/favorit.svg";
+
+  static const String resourceImagesFavorite = "assets/images/favorite.svg";
 
   static const String resourceImagesFilter = "assets/images/filter.svg";
 
@@ -29,6 +35,8 @@ class Assets {
   static const String resourceImagesGoogel = "assets/images/googel.svg";
 
   static const String resourceImagesHomeIcon = "assets/images/home_icon.svg";
+
+  static const String resourceImagesInstgrameIcon = "assets/images/instgrame_icon.svg";
 
   static const String resourceImagesOmboarding = "assets/images/omboarding.svg";
 
@@ -44,12 +52,26 @@ class Assets {
 
   static const String resourceImagesPhone = "assets/images/phone.svg";
 
+  static const String resourceImagesPhoneIcon = "assets/images/phone_icon.svg";
+
   static const String resourceImagesPineapple = "assets/images/pineapple.png";
+
+  static const String resourceImagesSelectedCart = "assets/images/selected_cart.svg";
+
+  static const String resourceImagesSelectedDrawer = "assets/images/selected_drawer.svg";
+
+  static const String resourceImagesSelectedFavotrite = "assets/images/selected_favotrite.svg";
+
+  static const String resourceImagesSelsctedOrder = "assets/images/selscted_order.svg";
 
   static const String resourceImagesSupport = "assets/images/support.svg";
 
   static const String resourceImagesTermsConditon = "assets/images/terms_conditon.svg";
 
   static const String resourceImagesTrash = "assets/images/trash.svg";
+
+  static const String resourceImagesUnselectedHome = "assets/images/unselected_home.svg";
+
+  static const String resourceImagesYoutubeIcon = "assets/images/youtube_icon.svg";
 }
 

@@ -330,6 +330,16 @@
 "newOrder": "New",
 "@newOrder": {}
 
+,"message": "Message",
+"@message": {},
+ "home": "Home",
+  "@home": {},
+
+  "orders": "Orders",
+  "@orders": {},
+
+  "more": "More",
+  "@more": {}
 
 
 
