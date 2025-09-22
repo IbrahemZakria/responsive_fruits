@@ -4,9 +4,9 @@ import 'package:responsive_fruits/features/auth/presentation/pages/o_t_p_views.d
 import 'package:responsive_fruits/features/auth/presentation/pages/sign_in.dart';
 import 'package:responsive_fruits/features/auth/presentation/pages/phone_sign_up_page.dart';
 import 'package:responsive_fruits/features/auth/presentation/pages/sign_up.dart';
-import 'package:responsive_fruits/features/home.dart/presentation/pages/adabtive_main_home_page.dart';
-import 'package:responsive_fruits/features/home.dart/presentation/pages/contact_us_page.dart';
-import 'package:responsive_fruits/features/home.dart/presentation/pages/profile_page.dart';
+import 'package:responsive_fruits/features/home/presentation/pages/adabtive_main_home_page.dart';
+import 'package:responsive_fruits/features/home/presentation/pages/contact_us_page.dart';
+import 'package:responsive_fruits/features/home/presentation/pages/profile_page.dart';
 import 'package:responsive_fruits/features/onboarding/presentation/pages/on_boarding_view.dart';
 
 Route<dynamic> onGenerateRoute(RouteSettings settings) {

@@ -4,7 +4,7 @@ import 'package:responsive_fruits/core/utils/functions/shared_preferance.dart';
 import 'package:responsive_fruits/features/auth/presentation/widgets/sign_in/sign_in_items.dart';
 import 'package:responsive_fruits/features/auth/presentation/widgets/auth_header.dart';
 import 'package:responsive_fruits/features/auth/presentation/widgets/auth_bottom_bottton.dart';
-import 'package:responsive_fruits/features/home.dart/presentation/pages/adabtive_main_home_page.dart';
+import 'package:responsive_fruits/features/home/presentation/pages/adabtive_main_home_page.dart';
 import 'package:responsive_fruits/generated/l10n.dart';
 
 class SignInBody extends StatelessWidget {
