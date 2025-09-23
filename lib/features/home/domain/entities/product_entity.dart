@@ -43,8 +43,11 @@ class ProductEntity extends HiveObject with EquatableMixin {
 
   @HiveField(12)
   final String? discountText;
+  @HiveField(12)
+  final bool? isFavorite;
 
   ProductEntity({
+    this.isFavorite = false,
     this.discountText,
     this.productUnit,
     this.amount,

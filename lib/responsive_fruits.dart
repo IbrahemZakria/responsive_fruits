@@ -1,12 +1,10 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:responsive_fruits/constant.dart';
 import 'package:responsive_fruits/core/utils/functions/on_generate_route.dart';
 import 'package:responsive_fruits/core/utils/functions/shared_preferance.dart';
 import 'package:responsive_fruits/core/utils/helper/cubits/localization/localization_cubit.dart';
-import 'package:responsive_fruits/features/home/presentation/cubit/home_cubit.dart';
+import 'package:responsive_fruits/features/home/presentation/cubit/home/home_cubit.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:responsive_fruits/features/home/presentation/pages/adabtive_main_home_page.dart';
 import 'package:responsive_fruits/features/onboarding/presentation/pages/on_boarding_view.dart';

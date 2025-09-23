@@ -102,7 +102,7 @@ class CartCard extends StatelessWidget {
 
                           CartIcon(
                             onTap: () {
-                              context.read<CartCubit>().decreaseproductcount(
+                              context.read<CartCubit>().decreaseProductCount(
                                 cartItemEntity.productEntity,
                               );
                             },

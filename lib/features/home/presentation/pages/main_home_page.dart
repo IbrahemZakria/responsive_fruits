@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:responsive_fruits/features/home/presentation/cubit/home_cubit.dart';
+import 'package:responsive_fruits/features/home/presentation/cubit/home/home_cubit.dart';
 import 'package:responsive_fruits/features/home/presentation/pages/cart_page.dart';
 import 'package:responsive_fruits/features/home/presentation/pages/home_page_body.dart';
 import 'package:responsive_fruits/features/home/presentation/pages/order_page.dart';

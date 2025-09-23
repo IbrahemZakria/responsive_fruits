@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:responsive_fruits/core/utils/assets.dart';
 import 'package:responsive_fruits/features/home/data/models/drawer_item_model.dart';
-import 'package:responsive_fruits/features/home/presentation/cubit/home_cubit.dart';
+import 'package:responsive_fruits/features/home/presentation/cubit/home/home_cubit.dart';
 import 'package:responsive_fruits/features/home/presentation/pages/adabtive_main_home_page.dart';
 import 'package:responsive_fruits/features/home/presentation/pages/contact_us_page.dart';
 import 'package:responsive_fruits/features/home/presentation/pages/profile_page.dart';

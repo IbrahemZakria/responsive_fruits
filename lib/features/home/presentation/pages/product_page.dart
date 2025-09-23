@@ -28,28 +28,14 @@ class _ProductPageState extends State<ProductPage> {
       appBar: MainHomeAppbar(
         titel: widget.productEntity.name,
         actions: [
-          IconButton(onPressed: () {}, icon: Icon(Icons.favorite_border)),
+          IconButton(
+            onPressed: () {},
+            icon: widget.productEntity.isFavorite!
+                ? Icon(Icons.favorite, color: Colors.red)
+                : Icon(Icons.favorite_border_outlined),
+          ),
         ],
         filter: true,
-        leading: MediaQuery.sizeOf(context).width < 1024
-            ? Row(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  IconButton(
-                    onPressed: () {
-                      Navigator.pop(context);
-                    },
-                    icon: Icon(Icons.arrow_back_ios_new),
-                  ),
-                  IconButton(
-                    onPressed: () {
-                      scaffoldKey.currentState?.openDrawer();
-                    },
-                    icon: Icon(Icons.menu),
-                  ),
-                ],
-              )
-            : null,
       ),
       body: Padding(
         padding: const EdgeInsets.all(8),
