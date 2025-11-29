@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:responsive_fruits/constant.dart';
-import 'package:responsive_fruits/core/utils/functions/on_generate_route.dart';
+import 'package:responsive_fruits/core/constant/constant_string.dart';
+import 'package:responsive_fruits/core/utils/router.dart';
 import 'package:responsive_fruits/core/utils/functions/shared_preferance.dart';
 import 'package:responsive_fruits/core/utils/helper/cubits/localization/localization_cubit.dart';
 import 'package:responsive_fruits/features/home/presentation/cubit/home/home_cubit.dart';
@@ -9,6 +9,9 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:responsive_fruits/features/home/presentation/pages/adabtive_main_home_page.dart';
 import 'package:responsive_fruits/features/onboarding/presentation/pages/on_boarding_view.dart';
 import 'generated/l10n.dart';
+
+import 'package:responsive_fruits/features/home/presentation/cubit/cart_cubit/cart_cubit.dart';
+import 'package:responsive_fruits/features/home/presentation/cubit/favorite/favorite_cubit.dart';
 
 class ResponsiveFruits extends StatelessWidget {
   const ResponsiveFruits({super.key});
@@ -19,10 +22,22 @@ class ResponsiveFruits extends StatelessWidget {
       providers: [
         BlocProvider(create: (context) => HomeCubit()),
         BlocProvider(create: (context) => LocalizationCubit()),
+        BlocProvider(create: (context) => FavoriteCubit()),
+        BlocProvider(create: (context) => CartCubit()),
       ],
       child: Builder(
         builder: (context) {
-          return MaterialApp(
+          final router = buildRouter(
+            initialLocation:
+                (SharedPreferance.getData<bool>(ConstantString.islogin) == true)
+                ? '/${AdabtiveMainHomePage.routeName}/home'
+                : '/${OnBoardingView.routeName}',
+          );
+
+          return MaterialApp.router(
+            routerDelegate: router.routerDelegate,
+            routeInformationParser: router.routeInformationParser,
+            routeInformationProvider: router.routeInformationProvider,
             key: const ValueKey('app'),
             debugShowCheckedModeBanner: false,
             title: 'Flutter Demo',
@@ -46,17 +61,14 @@ class ResponsiveFruits extends StatelessWidget {
                 return Locale(state.languageCode);
               }
               final savedCode =
-                  SharedPreferance.getData<String>(Constant.languageCode) ??
+                  SharedPreferance.getData<String>(
+                    ConstantString.languageCode,
+                  ) ??
                   'ar';
               return Locale(savedCode);
             }),
 
-            onGenerateRoute: onGenerateRoute,
-            initialRoute:
-                SharedPreferance.getData<bool>(Constant.islogin) == false ||
-                    SharedPreferance.getData<bool>(Constant.islogin) == null
-                ? OnBoardingView.routeName
-                : AdabtiveMainHomePage.routeName,
+            // router provided above as MaterialApp.router delegates
           );
         },
       ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_fruits/core/utils/helper/thems/app_text_syles.dart';
+import 'package:go_router/go_router.dart';
 import 'package:responsive_fruits/features/auth/presentation/pages/sign_up.dart';
 import 'package:responsive_fruits/features/onboarding/data/models/onboarding_model.dart';
 import 'package:responsive_fruits/features/onboarding/presentation/widgets/doted_indicator.dart';
@@ -51,7 +52,9 @@ class _OnboardingBodyState extends State<OnboardingBody> {
             visible: currentPage != models.length - 1,
             child: TextButton(
               onPressed: () {
-                Navigator.pushNamed(context, SignUp.routeName);
+                // Navigate using go_router
+                // ignore: use_build_context_synchronously
+                context.pushNamed(SignUp.routeName);
               },
               child: Text(
                 S.of(context).skip,

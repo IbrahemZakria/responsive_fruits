@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_fruits/core/utils/helper/widgets/custom_button.dart';
+import 'package:go_router/go_router.dart';
 import 'package:responsive_fruits/features/auth/presentation/pages/sign_up.dart';
 import 'package:responsive_fruits/generated/l10n.dart';
 
@@ -24,7 +25,7 @@ class GetStartedButton extends StatelessWidget {
           width: size.width * .3,
           onTap: () {
             if (currentPage == length - 1) {
-              Navigator.pushNamed(context, SignUp.routeName);
+              context.pushNamed(SignUp.routeName);
             } else {
               pageController.nextPage(
                 duration: const Duration(milliseconds: 300),

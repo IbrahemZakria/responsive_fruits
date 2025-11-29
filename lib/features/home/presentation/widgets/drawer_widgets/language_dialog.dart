@@ -22,38 +22,44 @@ class _LanguageDialogState extends State<LanguageDialog> {
           mainAxisSize: MainAxisSize.min,
           children: [
             // Arabic
-            RadioListTile<String>(
-              value: "ar",
+            RadioGroup(
               groupValue: selectedLang,
               onChanged: (value) {
                 setState(() {
                   selectedLang = value!;
                 });
               },
-              title: Row(
-                children: const [
-                  Text("🇸🇦", style: TextStyle(fontSize: 20)),
-                  SizedBox(width: 8),
-                  Text("العربية"),
-                ],
+              child: RadioListTile<String>(
+                value: "ar",
+
+                title: Row(
+                  children: const [
+                    Text("🇸🇦", style: TextStyle(fontSize: 20)),
+                    SizedBox(width: 8),
+                    Text("العربية"),
+                  ],
+                ),
               ),
             ),
 
             // English
-            RadioListTile<String>(
-              value: "en",
+            RadioGroup(
               groupValue: selectedLang,
               onChanged: (value) {
                 setState(() {
                   selectedLang = value!;
                 });
               },
-              title: Row(
-                children: const [
-                  Text("🇺🇸", style: TextStyle(fontSize: 20)),
-                  SizedBox(width: 8),
-                  Text("English"),
-                ],
+              child: RadioListTile<String>(
+                value: "en",
+
+                title: Row(
+                  children: const [
+                    Text("🇺🇸", style: TextStyle(fontSize: 20)),
+                    SizedBox(width: 8),
+                    Text("English"),
+                  ],
+                ),
               ),
             ),
 

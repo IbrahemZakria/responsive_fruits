@@ -5,7 +5,7 @@ import 'product_entity.dart';
 part 'cart_item_entity.g.dart';
 
 @HiveType(typeId: 1) // different id
-class CartItemEntity extends HiveObject with EquatableMixin {
+class CartItemEntity with EquatableMixin {
   @HiveField(0)
   final ProductEntity productEntity;
 

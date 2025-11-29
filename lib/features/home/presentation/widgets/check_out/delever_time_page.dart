@@ -39,50 +39,56 @@ class _DeliveryTimePageState extends State<DeliveryTimePage> {
           SliverToBoxAdapter(
             child: Column(
               children: [
-                RadioListTile<String>(
-                  value: "now",
+                RadioGroup(
                   groupValue: selectedOption,
                   onChanged: (value) {
                     setState(() {
                       selectedOption = value;
                     });
                   },
-                  title: const Text("Now"),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(12),
-                    side: const BorderSide(color: Colors.grey),
+                  child: RadioListTile<String>(
+                    value: "now",
+
+                    title: const Text("Now"),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(12),
+                      side: const BorderSide(color: Colors.grey),
+                    ),
                   ),
                 ),
 
                 const SizedBox(height: 16),
 
                 // ✅ الاختيار الثاني (Select Delivery Time مع DatePicker)
-                RadioListTile<String>(
-                  value: "later",
+                RadioGroup(
                   groupValue: selectedOption,
                   onChanged: (value) async {
                     await _pickDate(context);
                   },
-                  title: GestureDetector(
-                    onTap: () async {
-                      await _pickDate(
-                        context,
-                      ); // حتى لو هو مختار تقدر تضغط وتغير
-                    },
-                    child: const Text("Select Delivery Time"),
-                  ),
-                  subtitle: selectedDate == null
-                      ? const Text("No date selected")
-                      : Text(
-                          "${selectedDate!.day} - ${selectedDate!.month} - ${selectedDate!.year}",
-                          style: const TextStyle(
-                            fontWeight: FontWeight.bold,
-                            color: Colors.green,
+                  child: RadioListTile<String>(
+                    value: "later",
+
+                    title: GestureDetector(
+                      onTap: () async {
+                        await _pickDate(
+                          context,
+                        ); // حتى لو هو مختار تقدر تضغط وتغير
+                      },
+                      child: const Text("Select Delivery Time"),
+                    ),
+                    subtitle: selectedDate == null
+                        ? const Text("No date selected")
+                        : Text(
+                            "${selectedDate!.day} - ${selectedDate!.month} - ${selectedDate!.year}",
+                            style: const TextStyle(
+                              fontWeight: FontWeight.bold,
+                              color: Colors.green,
+                            ),
                           ),
-                        ),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(12),
-                    side: const BorderSide(color: Colors.grey),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(12),
+                      side: const BorderSide(color: Colors.grey),
+                    ),
                   ),
                 ),
               ],

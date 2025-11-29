@@ -1,10 +1,9 @@
-import 'package:equatable/equatable.dart';
 import 'package:hive/hive.dart';
 
 part 'product_entity.g.dart';
 
 @HiveType(typeId: 0) // unique id
-class ProductEntity extends HiveObject with EquatableMixin {
+class ProductEntity extends HiveObject {
   @HiveField(0)
   final int? amount;
 
@@ -43,7 +42,8 @@ class ProductEntity extends HiveObject with EquatableMixin {
 
   @HiveField(12)
   final String? discountText;
-  @HiveField(12)
+
+  @HiveField(13)
   final bool? isFavorite;
 
   ProductEntity({
@@ -62,7 +62,4 @@ class ProductEntity extends HiveObject with EquatableMixin {
     required this.description,
     required this.productCode,
   });
-
-  @override
-  List<Object?> get props => [productCode];
 }

@@ -41,7 +41,7 @@ class _CustomShowDialogState extends State<CustomShowDialog> {
 
                   /// Choose Area
                   DropdownButtonFormField<String>(
-                    value: selectedArea,
+                    initialValue: selectedArea,
                     decoration: const InputDecoration(
                       labelText: "Choose Area",
                       border: OutlineInputBorder(),
@@ -56,21 +56,25 @@ class _CustomShowDialogState extends State<CustomShowDialog> {
                   const SizedBox(height: 16),
 
                   /// Radio Options (Choose only one)
-                  RadioListTile<String>(
-                    title: const Text("Offers"),
-                    value: "Offers",
+                  RadioGroup(
                     groupValue: selectedOption,
                     onChanged: (value) {
                       setState(() => selectedOption = value);
                     },
+                    child: RadioListTile<String>(
+                      title: const Text("Offers"),
+                      value: "Offers",
+                    ),
                   ),
-                  RadioListTile<String>(
-                    title: const Text("Free Delivery"),
-                    value: "Free Delivery",
+                  RadioGroup(
                     groupValue: selectedOption,
                     onChanged: (value) {
                       setState(() => selectedOption = value);
                     },
+                    child: RadioListTile<String>(
+                      title: const Text("Free Delivery"),
+                      value: "Free Delivery",
+                    ),
                   ),
 
                   const SizedBox(height: 20),

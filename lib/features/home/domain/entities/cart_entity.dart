@@ -1,11 +1,11 @@
 import 'package:hive/hive.dart';
-import 'package:responsive_fruits/constant.dart';
+import 'package:responsive_fruits/core/constant/constant_string.dart';
 import 'package:responsive_fruits/features/home/domain/entities/cart_item_entity.dart';
 import 'package:responsive_fruits/features/home/domain/entities/product_entity.dart';
 
 class CartEntity {
   final List<CartItemEntity> cartProducts;
-  final box = Hive.box<CartItemEntity>(Constant.cartBox);
+  final box = Hive.box<CartItemEntity>(ConstantString.cartBox);
 
   CartEntity(this.cartProducts);
 

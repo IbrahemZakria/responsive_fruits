@@ -15,26 +15,44 @@ class PaymentOptions extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        RadioListTile<String>(
-          value: "Credit Card/Debit Card",
-          groupValue: selected,
+        RadioGroup(
           onChanged: onChanged,
-          title: Text(S.of(context).creditCard),
-          secondary: const Icon(Icons.credit_card),
+          groupValue: selected,
+          child: RadioListTile<String>(
+            value: "Credit Card/Debit Card",
+            title: Text(S.of(context).creditCard),
+            secondary: const Icon(Icons.credit_card),
+          ),
         ),
-        RadioListTile<String>(
-          value: "Cash on Delivery",
-          groupValue: selected,
+        RadioGroup(
           onChanged: onChanged,
-          title: Text(S.of(context).cashOnDelivery),
-          secondary: const Icon(Icons.money),
+          groupValue: selected,
+          child: RadioListTile<String>(
+            value: "Credit Card/Debit Card",
+
+            title: Text(S.of(context).creditCard),
+            secondary: const Icon(Icons.credit_card),
+          ),
         ),
-        RadioListTile<String>(
-          value: "Knet",
-          groupValue: selected,
+        RadioGroup(
           onChanged: onChanged,
-          title: Text(S.of(context).knet),
-          secondary: const Icon(Icons.account_balance),
+          groupValue: selected,
+          child: RadioListTile<String>(
+            value: "Cash on Delivery",
+
+            title: Text(S.of(context).cashOnDelivery),
+            secondary: const Icon(Icons.money),
+          ),
+        ),
+        RadioGroup(
+          onChanged: onChanged,
+          groupValue: selected,
+          child: RadioListTile<String>(
+            value: "Knet",
+
+            title: Text(S.of(context).knet),
+            secondary: const Icon(Icons.account_balance),
+          ),
         ),
       ],
     );

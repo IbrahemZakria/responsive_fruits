@@ -7,7 +7,7 @@ import 'package:responsive_fruits/core/utils/helper/thems/app_text_syles.dart';
 import 'package:responsive_fruits/features/home/domain/entities/product_entity.dart';
 import 'package:responsive_fruits/features/home/presentation/cubit/cart_cubit/cart_cubit.dart';
 import 'package:responsive_fruits/features/home/presentation/cubit/favorite/favorite_cubit.dart';
-import 'package:responsive_fruits/features/home/presentation/pages/product_page.dart';
+import 'package:go_router/go_router.dart';
 
 class ProductItem extends StatelessWidget {
   final ProductEntity product;
@@ -17,14 +17,8 @@ class ProductItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        Navigator.of(context).push(
-          MaterialPageRoute(
-            builder: (_) => ProductPage(
-              productEntity: product,
-              key: ValueKey("ProductPage"),
-            ),
-          ),
-        );
+        // navigate to product page passing product as extra
+        context.push('/product', extra: product);
       },
       child: Card(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_fruits/features/auth/presentation/pages/o_t_p_views.dart';
+import 'package:go_router/go_router.dart';
 import 'package:responsive_fruits/features/auth/presentation/widgets/auth_bottom_bottton.dart';
 import 'package:responsive_fruits/features/auth/presentation/widgets/auth_header.dart';
 import 'package:responsive_fruits/features/auth/presentation/widgets/whats_app_form.dart';
@@ -33,7 +34,7 @@ class ForgetPasswordBody extends StatelessWidget {
                 Navigator.pop(context);
               },
               buttonTap: () {
-                Navigator.pushNamed(context, OTPViews.routeName);
+                context.pushNamed(OTPViews.routeName);
               },
             ),
           ],

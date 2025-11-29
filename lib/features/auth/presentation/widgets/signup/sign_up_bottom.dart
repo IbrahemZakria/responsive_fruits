@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:responsive_fruits/core/utils/helper/thems/app_text_syles.dart';
 import 'package:responsive_fruits/features/auth/presentation/pages/sign_in.dart';
 import 'package:responsive_fruits/generated/l10n.dart';
+import 'package:go_router/go_router.dart';
 
 class SignUpBottom extends StatelessWidget {
   const SignUpBottom({super.key});
@@ -27,7 +28,7 @@ class SignUpBottom extends StatelessWidget {
                 ).copyWith(color: Colors.blueAccent),
                 recognizer: TapGestureRecognizer()
                   ..onTap = () {
-                    Navigator.pushNamed(context, SignIn.routeName);
+                    context.pushNamed(SignIn.routeName);
                   },
               ),
             ],
@@ -48,7 +49,6 @@ class SignUpBottom extends StatelessWidget {
                 recognizer: TapGestureRecognizer()
                   ..onTap = () {
                     // هنا تعمل Navigation لصفحة الشروط
-                    print("Terms of service tapped!");
                   },
               ),
             ],
@@ -70,11 +70,7 @@ class SignUpBottom extends StatelessWidget {
                 style: AppTextSyles.textStyle16reg(
                   context,
                 ).copyWith(color: Colors.blueAccent),
-                recognizer: TapGestureRecognizer()
-                  ..onTap = () {
-                    print("Terms of service tapped!");
-                    // TODO: Navigate to Terms screen
-                  },
+                recognizer: TapGestureRecognizer()..onTap = () {},
               ),
             ],
           ),
@@ -91,11 +87,7 @@ class SignUpBottom extends StatelessWidget {
                 style: AppTextSyles.textStyle18reg(
                   context,
                 ).copyWith(color: Colors.blueAccent),
-                recognizer: TapGestureRecognizer()
-                  ..onTap = () {
-                    print("Privacy Policy tapped!");
-                    // TODO: Navigate to Privacy Policy screen
-                  },
+                recognizer: TapGestureRecognizer()..onTap = () {},
               ),
             ],
           ),

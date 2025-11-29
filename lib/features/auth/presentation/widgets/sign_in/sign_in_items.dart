@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_fruits/core/utils/helper/thems/app_text_syles.dart';
 import 'package:responsive_fruits/features/auth/presentation/pages/forget_password_page.dart';
+import 'package:go_router/go_router.dart';
 import 'package:responsive_fruits/features/auth/presentation/widgets/titel_text_field.dart';
 import 'package:responsive_fruits/features/auth/presentation/widgets/whats_app_form.dart';
 import 'package:responsive_fruits/generated/l10n.dart';
@@ -28,7 +29,7 @@ class SignInItems extends StatelessWidget {
           children: [
             TextButton(
               onPressed: () {
-                Navigator.pushNamed(context, ForgetPasswordPage.routeName);
+                context.pushNamed(ForgetPasswordPage.routeName);
               },
               child: Text(
                 S.of(context).forget_password,

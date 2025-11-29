@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:responsive_fruits/core/utils/helper/widgets/custom_button.dart';
 import 'package:responsive_fruits/features/home/presentation/cubit/cart_cubit/cart_cubit.dart';
-import 'package:responsive_fruits/features/home/presentation/pages/chek_out_page.dart';
+import 'package:go_router/go_router.dart';
 import 'package:responsive_fruits/features/home/presentation/widgets/cart/card_list_view.dart';
 import 'package:responsive_fruits/features/home/presentation/widgets/cart/products_number_text.dart';
 import 'package:responsive_fruits/generated/l10n.dart';
@@ -41,28 +41,12 @@ class CartPageBody extends StatelessWidget {
                     SizedBox(height: 16),
                     CustomButton(
                       onTap: () {
-                        print(
-                          S
-                              .of(context)
-                              .paymentAmount(
-                                context
-                                    .read<CartCubit>()
-                                    .cartEntity
-                                    .calculateTotalPrice(),
-                              ),
-                        );
-
                         if (context
                             .read<CartCubit>()
                             .cartEntity
                             .cartProducts
                             .isNotEmpty) {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => ChekOutPage(),
-                            ),
-                          );
+                          context.push('/checkout');
                         }
                       },
                       text: S

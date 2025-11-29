@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_fruits/core/utils/helper/thems/app_text_syles.dart';
+import 'package:go_router/go_router.dart';
 import 'package:responsive_fruits/features/home/domain/entities/seller_entity.dart';
-import 'package:responsive_fruits/features/home/presentation/pages/seller_products_page.dart';
+// import 'package:responsive_fruits/features/home/presentation/pages/seller_products_page.dart';
 import 'package:responsive_fruits/generated/l10n.dart';
 
 class SellerItem extends StatelessWidget {
@@ -13,14 +14,8 @@ class SellerItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        Navigator.of(context).push(
-          MaterialPageRoute(
-            builder: (_) => SellerProductsPage(
-              sellerName: "sellerName",
-              key: ValueKey("SellerProductsPage"),
-            ),
-          ),
-        );
+        // pass seller name via extra
+        context.push('/seller', extra: seller.name);
       },
       child: Card(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),

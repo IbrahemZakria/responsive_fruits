@@ -1,4 +1,4 @@
-class Constant {
+class ConstantString {
   static const languageCode = 'language';
   static const islogin = 'isOnoarding';
   static const token = 'token';

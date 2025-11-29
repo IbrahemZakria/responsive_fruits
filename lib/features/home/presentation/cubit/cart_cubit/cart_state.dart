@@ -11,7 +11,7 @@ class AddProductToCartState extends CartState {
 
   AddProductToCartState({required this.cartsItems});
 
-  get cartEntity => null;
+  Null get cartEntity => null;
 }
 
 class RemovrProductFromCartState extends CartState {
@@ -19,5 +19,5 @@ class RemovrProductFromCartState extends CartState {
 
   RemovrProductFromCartState({required this.cartsItems});
 
-  get cartEntity => null;
+  Null get cartEntity => null;
 }

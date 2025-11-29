@@ -1,6 +1,6 @@
 import 'package:bloc/bloc.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:responsive_fruits/constant.dart';
+import 'package:responsive_fruits/core/constant/constant_string.dart';
 import 'package:responsive_fruits/features/home/domain/entities/cart_item_entity.dart';
 import 'package:responsive_fruits/features/home/domain/entities/cart_entity.dart';
 import 'package:responsive_fruits/features/home/domain/entities/product_entity.dart';
@@ -15,7 +15,7 @@ class CartCubit extends Cubit<CartState> {
   CartEntity cartEntity = CartEntity([]);
 
   Future<void> _initCart() async {
-    final box = await Hive.openBox<CartItemEntity>(Constant.cartBox);
+    final box = await Hive.openBox<CartItemEntity>(ConstantString.cartBox);
     cartEntity = CartEntity(box.values.toList());
     emit(AddProductToCartState(cartsItems: cartEntity.cartProducts));
   }

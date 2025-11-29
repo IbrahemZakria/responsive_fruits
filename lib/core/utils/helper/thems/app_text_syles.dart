@@ -90,7 +90,7 @@ class AppTextSyles {
 }
 
 /// دالة حساب حجم الخط Responsive
-double getResponsiveFontSize(context, {required double fontSize}) {
+double getResponsiveFontSize(BuildContext context, {required double fontSize}) {
   double scaleFactor = getScaleFactor(context);
   double responsiveFontSize = fontSize * scaleFactor;
 
@@ -101,7 +101,7 @@ double getResponsiveFontSize(context, {required double fontSize}) {
 }
 
 /// دالة تحديد الـ Scale حسب عرض الشاشة
-double getScaleFactor(context) {
+double getScaleFactor(BuildContext context) {
   double width = MediaQuery.sizeOf(context).width;
   if (width < SizeConfig.tablet) {
     return width / 550;

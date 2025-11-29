@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:responsive_fruits/core/utils/assets.dart';
 import 'package:responsive_fruits/features/auth/data/models/signup_model.dart';
 import 'package:responsive_fruits/features/auth/presentation/pages/phone_sign_up_page.dart';
+import 'package:go_router/go_router.dart';
 import 'package:responsive_fruits/features/auth/presentation/widgets/signup/sign_up_item.dart';
 import 'package:responsive_fruits/generated/l10n.dart';
 
@@ -15,7 +16,7 @@ class SignupItems extends StatelessWidget {
         titel: S.of(context).sign_in_with_phone,
         image: Assets.resourceImagesPhone,
         ontap: () {
-          Navigator.pushNamed(context, PhoneSignUpPage.routeName);
+          context.pushNamed(PhoneSignUpPage.routeName);
         },
       ),
       SignupModel(

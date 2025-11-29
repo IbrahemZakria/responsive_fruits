@@ -7,7 +7,7 @@ import 'package:responsive_fruits/core/utils/helper/thems/app_colors.dart';
 import 'package:responsive_fruits/core/utils/helper/thems/app_text_syles.dart';
 import 'package:responsive_fruits/features/home/domain/entities/cart_item_entity.dart';
 import 'package:responsive_fruits/features/home/presentation/cubit/cart_cubit/cart_cubit.dart';
-import 'package:responsive_fruits/features/home/presentation/pages/product_page.dart';
+import 'package:go_router/go_router.dart';
 import 'package:responsive_fruits/features/home/presentation/widgets/cart/cart_icon.dart';
 
 class CartCard extends StatelessWidget {
@@ -19,12 +19,7 @@ class CartCard extends StatelessWidget {
     Size size = MediaQuery.of(context).size;
     return InkWell(
       onTap: () {
-        Navigator.of(context).push(
-          MaterialPageRoute(
-            builder: (_) =>
-                ProductPage(productEntity: cartItemEntity.productEntity),
-          ),
-        );
+        context.push('/product', extra: cartItemEntity.productEntity);
       },
       child: Card(
         child: IntrinsicHeight(

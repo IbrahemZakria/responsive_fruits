@@ -27,8 +27,7 @@ class _SelectableOptionsExpansionState
       title: Text(widget.title),
       children: List.generate(
         widget.options.length,
-        (index) => RadioListTile<int>(
-          value: index,
+        (index) => RadioGroup(
           groupValue: _selected,
           onChanged: (val) {
             setState(() {
@@ -36,7 +35,11 @@ class _SelectableOptionsExpansionState
             });
             widget.onChanged?.call(val);
           },
-          title: Text(widget.options[index]),
+          child: RadioListTile<int>(
+            value: index,
+
+            title: Text(widget.options[index]),
+          ),
         ),
       ),
     );

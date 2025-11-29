@@ -11,6 +11,7 @@ import 'package:responsive_fruits/features/home/presentation/pages/profile_page.
 import 'package:responsive_fruits/features/home/presentation/widgets/drawer_widgets/drawer_item.dart';
 import 'package:responsive_fruits/features/home/presentation/widgets/drawer_widgets/language_dialog.dart';
 import 'package:responsive_fruits/generated/l10n.dart';
+import 'package:go_router/go_router.dart';
 
 class DrawerItems extends StatefulWidget {
   const DrawerItems({super.key});
@@ -28,28 +29,15 @@ class _DrawerItemsState extends State<DrawerItems> {
         titel: S.of(context).profile,
         image: Assets.resourceImagesPerson,
         onTap: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => ProfilePage()),
-          );
+          context.pushNamed(ProfilePage.routeName);
         },
       ),
       DrawerItemModel(
         titel: S.of(context).favorites,
         image: Assets.resourceImagesFavorit,
         onTap: () {
-          final currentRoute = ModalRoute.of(context)?.settings.name;
-          log(currentRoute.toString());
-          if (currentRoute == AdabtiveMainHomePage.routeName) {
-            context.read<HomeCubit>().changeTab(3);
-          } else {
-            Navigator.pushNamedAndRemoveUntil(
-              context,
-              AdabtiveMainHomePage.routeName,
-              (route) => true,
-            );
-            context.read<HomeCubit>().changeTab(3);
-          }
+          context.go('/${AdabtiveMainHomePage.routeName}/home');
+          context.read<HomeCubit>().changeTab(3);
         },
       ),
       DrawerItemModel(
@@ -63,10 +51,7 @@ class _DrawerItemsState extends State<DrawerItems> {
         titel: S.of(context).support,
         image: Assets.resourceImagesSupport,
         onTap: () {
-          Navigator.of(
-            context,
-            rootNavigator: true,
-          ).pushNamed(ContactUsPage.routeName);
+          context.pushNamed(ContactUsPage.routeName);
         },
       ),
       DrawerItemModel(

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:responsive_fruits/features/home/domain/entities/order_entity.dart';
 import 'package:responsive_fruits/features/home/domain/entities/order_status_extentation.dart';
-import 'package:responsive_fruits/features/home/presentation/widgets/order/order_details_page.dart';
 
 class OrderItem extends StatelessWidget {
   final OrderEntity order;
@@ -16,21 +16,14 @@ class OrderItem extends StatelessWidget {
 
     return InkWell(
       onTap: () {
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) {
-              return OrderDetailsPage(order: order);
-            },
-          ),
-        );
+        context.push('/order', extra: order);
       },
       child: Card(
         margin: const EdgeInsets.symmetric(vertical: 8, horizontal: 12),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
         child: ListTile(
           leading: CircleAvatar(
-            backgroundColor: color.withOpacity(0.2),
+            backgroundColor: color.withValues(alpha: .02),
             child: Icon(icon, color: color),
           ),
           title: Text(

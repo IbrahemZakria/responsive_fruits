@@ -18,9 +18,6 @@ class ProductPage extends StatefulWidget {
 }
 
 class _ProductPageState extends State<ProductPage> {
-  int? _selectedWeight;
-  int? _selectedAddon;
-
   final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
@@ -74,9 +71,7 @@ class _ProductPageState extends State<ProductPage> {
                         "2 Kg – 12.00 KD",
                       ],
                       onChanged: (val) {
-                        setState(() {
-                          _selectedWeight = val;
-                        });
+                        setState(() {});
                       },
                     ),
                     SelectableOptionsExpansion(
@@ -86,9 +81,7 @@ class _ProductPageState extends State<ProductPage> {
                         "Gift wrap – 0.50 KD",
                       ],
                       onChanged: (val) {
-                        setState(() {
-                          _selectedAddon = val;
-                        });
+                        setState(() {});
                       },
                     ),
                   ],

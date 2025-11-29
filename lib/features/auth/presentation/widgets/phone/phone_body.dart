@@ -4,6 +4,7 @@ import 'package:responsive_fruits/features/auth/presentation/widgets/auth_bottom
 import 'package:responsive_fruits/features/auth/presentation/widgets/phone/sign_with_phone_items.dart';
 import 'package:responsive_fruits/features/auth/presentation/widgets/auth_header.dart';
 import 'package:responsive_fruits/generated/l10n.dart';
+import 'package:go_router/go_router.dart';
 
 class PhoneBody extends StatelessWidget {
   const PhoneBody({super.key});
@@ -28,7 +29,7 @@ class PhoneBody extends StatelessWidget {
               titel1: S.of(context).already_have_account,
               titel2: S.of(context).login,
               textTap: () {
-                Navigator.pushNamed(context, SignIn.routeName);
+                context.pushNamed(SignIn.routeName);
               },
               buttonTap: () {},
             ),

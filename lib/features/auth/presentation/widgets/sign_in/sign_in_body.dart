@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_fruits/constant.dart';
+import 'package:responsive_fruits/core/constant/constant_string.dart';
 import 'package:responsive_fruits/core/utils/functions/shared_preferance.dart';
 import 'package:responsive_fruits/features/auth/presentation/widgets/sign_in/sign_in_items.dart';
 import 'package:responsive_fruits/features/auth/presentation/widgets/auth_header.dart';
 import 'package:responsive_fruits/features/auth/presentation/widgets/auth_bottom_bottton.dart';
 import 'package:responsive_fruits/features/home/presentation/pages/adabtive_main_home_page.dart';
 import 'package:responsive_fruits/generated/l10n.dart';
+import 'package:go_router/go_router.dart';
 
 class SignInBody extends StatelessWidget {
   const SignInBody({super.key});
@@ -33,12 +34,11 @@ class SignInBody extends StatelessWidget {
                 Navigator.pop(context);
               },
               buttonTap: () {
-                SharedPreferance.setData(key: Constant.islogin, value: true);
-                Navigator.pushNamedAndRemoveUntil(
-                  context,
-                  AdabtiveMainHomePage.routeName,
-                  (route) => true,
+                SharedPreferance.setData(
+                  key: ConstantString.islogin,
+                  value: true,
                 );
+                context.go('/${AdabtiveMainHomePage.routeName}/home');
               },
             ),
           ],
