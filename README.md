@@ -1,16 +1,23 @@
-# responsive_fruits
+🥝 Responsive Fruits
+📱 Overview
 
-A new Flutter project.
+Responsive Fruits is a Flutter-based e-commerce mobile application designed to sell fresh fruits online.
+The app focuses on responsive design, ensuring a smooth and adaptive user experience across mobile, tablet, and desktop devices.
 
-## Getting Started
+It provides features like product listing, cart management, adaptive navigation, and clean architecture structure for scalability and maintainability.
 
-This project is a starting point for a Flutter application.
+🧩 Features
 
-A few resources to get you started if this is your first Flutter project:
+🏠 Home Page: Displays fruit products dynamically with categories and prices.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+🛒 Cart System: Users can add, remove, and update items in the cart.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+💬 Real-time Updates: The cart badge updates instantly when products are added or removed.
+
+📱 Responsive UI: Adaptive layouts for all screen sizes using LayoutBuilder and custom widgets.
+
+🧱 Clean Architecture: Organized into data, domain, and presentation layers for better scalability.
+
+🎨 Beautiful UI: Built with custom components, icons, and smooth animations.
+
+🔔 Push Notifications: Integrated with OneSignal and FCM to send real-time updates and alerts to users.
