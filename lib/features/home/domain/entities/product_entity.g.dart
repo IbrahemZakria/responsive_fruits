@@ -17,6 +17,7 @@ class ProductEntityAdapter extends TypeAdapter<ProductEntity> {
       for (int i = 0; i < numOfFields; i++) reader.readByte(): reader.read(),
     };
     return ProductEntity(
+      isFavorite: fields[13] as bool?,
       discountText: fields[12] as String?,
       productUnit: fields[1] as String?,
       amount: fields[0] as int?,
@@ -36,7 +37,7 @@ class ProductEntityAdapter extends TypeAdapter<ProductEntity> {
   @override
   void write(BinaryWriter writer, ProductEntity obj) {
     writer
-      ..writeByte(13)
+      ..writeByte(14)
       ..writeByte(0)
       ..write(obj.amount)
       ..writeByte(1)
@@ -62,7 +63,9 @@ class ProductEntityAdapter extends TypeAdapter<ProductEntity> {
       ..writeByte(11)
       ..write(obj.sellsCount)
       ..writeByte(12)
-      ..write(obj.discountText);
+      ..write(obj.discountText)
+      ..writeByte(13)
+      ..write(obj.isFavorite);
   }
 
   @override

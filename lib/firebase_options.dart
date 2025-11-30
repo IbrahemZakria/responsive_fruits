@@ -64,8 +64,10 @@ class DefaultFirebaseOptions {
     messagingSenderId: '1063889423103',
     projectId: 'fruits-hup-f73f5',
     storageBucket: 'fruits-hup-f73f5.firebasestorage.app',
-    androidClientId: '1063889423103-fru14moffo264u1nm8b0ild9jlia8usq.apps.googleusercontent.com',
-    iosClientId: '1063889423103-upmq5g4jlldbbu7nmf8mi58iacskfan7.apps.googleusercontent.com',
+    androidClientId:
+        '1063889423103-fru14moffo264u1nm8b0ild9jlia8usq.apps.googleusercontent.com',
+    iosClientId:
+        '1063889423103-upmq5g4jlldbbu7nmf8mi58iacskfan7.apps.googleusercontent.com',
     iosBundleId: 'com.example.responsiveFruits',
   );
 
@@ -75,8 +77,10 @@ class DefaultFirebaseOptions {
     messagingSenderId: '1063889423103',
     projectId: 'fruits-hup-f73f5',
     storageBucket: 'fruits-hup-f73f5.firebasestorage.app',
-    androidClientId: '1063889423103-fru14moffo264u1nm8b0ild9jlia8usq.apps.googleusercontent.com',
-    iosClientId: '1063889423103-upmq5g4jlldbbu7nmf8mi58iacskfan7.apps.googleusercontent.com',
+    androidClientId:
+        '1063889423103-fru14moffo264u1nm8b0ild9jlia8usq.apps.googleusercontent.com',
+    iosClientId:
+        '1063889423103-upmq5g4jlldbbu7nmf8mi58iacskfan7.apps.googleusercontent.com',
     iosBundleId: 'com.example.responsiveFruits',
   );
 

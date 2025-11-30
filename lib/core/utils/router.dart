@@ -21,11 +21,17 @@ import 'package:responsive_fruits/features/home/presentation/pages/seller_produc
 import 'package:responsive_fruits/features/home/presentation/pages/chek_out_page.dart';
 import 'package:responsive_fruits/features/home/domain/entities/product_entity.dart';
 import 'package:responsive_fruits/features/home/domain/entities/order_entity.dart';
+import 'package:responsive_fruits/features/splash/presentation/pages/splash_page.dart';
 
 GoRouter buildRouter({required String initialLocation}) {
   return GoRouter(
     initialLocation: initialLocation,
     routes: [
+      GoRoute(
+        name: SplashPage.routeName,
+        path: '/${SplashPage.routeName}',
+        builder: (context, state) => const SplashPage(),
+      ),
       GoRoute(
         name: OnBoardingView.routeName,
         path: '/${OnBoardingView.routeName}',

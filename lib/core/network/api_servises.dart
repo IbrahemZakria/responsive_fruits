@@ -2,7 +2,7 @@ import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_fruits/core/utils/helper/widgets/user_message.dart';
 
-class ApiServises {
+class ApiServices {
   final Dio _dio = Dio();
   final String _baseUrl = 'https://fruits.sys-web.net/api/';
 
@@ -27,6 +27,7 @@ class ApiServises {
     required String endpoint,
     Map<String, dynamic>? data,
     String? token,
+    Map<String, String>? header,
   }) async {
     Map<String, String> headers = {
       'Content-Type': 'application/x-www-form-urlencoded',
@@ -34,6 +35,9 @@ class ApiServises {
     };
     if (token != null) {
       headers.addAll({"Authorization": "Bearer $token"});
+    }
+    if (header != null) {
+      headers.addAll(header);
     }
     try {
       Response response = await _dio.post(

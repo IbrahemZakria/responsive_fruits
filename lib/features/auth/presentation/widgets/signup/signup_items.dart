@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_fruits/core/utils/assets.dart';
-import 'package:responsive_fruits/features/auth/data/models/signup_model.dart';
+import 'package:responsive_fruits/features/auth/domain/entities/signup_model.dart';
 import 'package:responsive_fruits/features/auth/presentation/pages/phone_sign_up_page.dart';
 import 'package:go_router/go_router.dart';
 import 'package:responsive_fruits/features/auth/presentation/widgets/signup/sign_up_item.dart';
@@ -11,20 +11,20 @@ class SignupItems extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final List<SignupModel> models = [
-      SignupModel(
+    final List<AddRegesterEntity> models = [
+      AddRegesterEntity(
         titel: S.of(context).sign_in_with_phone,
         image: Assets.resourceImagesPhone,
         ontap: () {
           context.pushNamed(PhoneSignUpPage.routeName);
         },
       ),
-      SignupModel(
+      AddRegesterEntity(
         ontap: () {},
         titel: S.of(context).sign_in_with_google,
         image: Assets.resourceImagesGoogel,
       ),
-      SignupModel(
+      AddRegesterEntity(
         ontap: () {},
         titel: S.of(context).sign_in_with_facebook,
         image: Assets.resourceImagesFacebook,

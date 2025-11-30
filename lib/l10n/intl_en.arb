@@ -1,178 +1,122 @@
 {
   "@@locale": "en",
-
-"skip": "Skip",
-"@skip": {},
-
+  "skip": "Skip",
+  "@skip": {},
   "enter_your_number": "Enter your number",
-"@enter_your_number": {},
-
-"phone_number": "Phone Number",
-"@phone_number": {},
-
-"mobile_number": "Mobile Number",
-"@mobile_number": {},
-
-"submit": "Submit",
-"@submit": {},
-
-"sign_up_to_wikala": "Sign Up to Wikala",
-"@sign_up_to_wikala": {},
-
-"sign_up": "Sign Up",
-"@sign_up": {},
-
-"already_have_account": "Already have an account?",
-"@already_have_account": {},
-
-"login": " Login ",
-"@login": {},
-
-"full_name": "Full Name",
-"@full_name": {},
-
-"first_and_last_name": "First and Last Name",
-"@first_and_last_name": {},
-
-"phone_number_whatsapp": "Phone Number with Whatsapp",
-"@phone_number_whatsapp": {},
-
-"password": "Password",
-"@password": {},
-
-"login_to_wikala": "Login to Wikala",
-"@login_to_wikala": {},
-
-"donot_have_account": "Don’t have an account?",
-"@donot_have_account": {},
-
-"forget_password": "Forget Password?",
-"@forget_password": {},
-
-"already_member": "Already member?",
-"@already_member": {},
-
-"sign_in": "Sign In",
-"@sign_in": {},
-
-"by_continue_agree": "By continuing, you agree to our",
-"@by_continue_agree": {},
-
-"terms_of_service": " Terms of Service ",
-"@terms_of_service": {},
-
-"terms_of_service_tapped": "Terms of Service tapped!",
-"@terms_of_service_tapped": {},
-
-"and_our": " and our ",
-"@and_our": {},
-
-"privacy_policy": "Privacy Policy",
-"@privacy_policy": {},
-
-"sign_in_with_phone": "Sign in with Phone Number",
-"@sign_in_with_phone": {},
-
-"sign_in_with_google": "Sign in with Google",
-"@sign_in_with_google": {},
-
-"sign_in_with_facebook": "Sign in with Facebook",
-"@sign_in_with_facebook": {},
-
-"welcome_to_app": "Welcome to Our App",
-"@welcome_to_app": {},
-
-"e_shopping": "E Shopping",
-"@e_shopping": {},
-
-"explore_fruits": "Explore organic fruits & grab them",
-"@explore_fruits": {},
-
-"delivery_arrived": "Delivery Arrived",
-"@delivery_arrived": {},
-
-"order_arrived_place": "Order has arrived at your place",
-"@order_arrived_place": {},
-
-"fast_payment": "Fast Payment",
-"@fast_payment": {},
-
-"quick_secure_checkout": "Quick and secure checkout process",
-"@quick_secure_checkout": {},
-
-"next": "Next",
-"@next": {},
-
-"get_started": "Get Started",
-"@get_started": {},
-"not_received": "Not received?",
-"@not_received": {},
-
-"send_again": "Send Again",
-"@send_again": {},
-"enter_received_otp": "Enter Received OTP",
-"@enter_received_otp": {},
-
-"confirm": "Confirm",
-"@confirm": {},
-
+  "@enter_your_number": {},
+  "phone_number": "Phone Number",
+  "@phone_number": {},
+  "mobile_number": "Mobile Number",
+  "@mobile_number": {},
+  "submit": "Submit",
+  "@submit": {},
+  "sign_up_to_wikala": "Sign Up to Wikala",
+  "@sign_up_to_wikala": {},
+  "sign_up": "Sign Up",
+  "@sign_up": {},
+  "already_have_account": "Already have an account?",
+  "@already_have_account": {},
+  "login": " Login ",
+  "@login": {},
+  "full_name": "Full Name",
+  "@full_name": {},
+  "first_and_last_name": "First and Last Name",
+  "@first_and_last_name": {},
+  "phone_number_whatsapp": "Phone Number with Whatsapp",
+  "@phone_number_whatsapp": {},
+  "password": "Password",
+  "@password": {},
+  "login_to_wikala": "Login to Wikala",
+  "@login_to_wikala": {},
+  "donot_have_account": "Don’t have an account?",
+  "@donot_have_account": {},
+  "forget_password": "Forget Password?",
+  "@forget_password": {},
+  "already_member": "Already member?",
+  "@already_member": {},
+  "sign_in": "Sign In",
+  "@sign_in": {},
+  "by_continue_agree": "By continuing, you agree to our",
+  "@by_continue_agree": {},
+  "terms_of_service": " Terms of Service ",
+  "@terms_of_service": {},
+  "terms_of_service_tapped": "Terms of Service tapped!",
+  "@terms_of_service_tapped": {},
+  "and_our": " and our ",
+  "@and_our": {},
+  "privacy_policy": "Privacy Policy",
+  "@privacy_policy": {},
+  "sign_in_with_phone": "Sign in with Phone Number",
+  "@sign_in_with_phone": {},
+  "sign_in_with_google": "Sign in with Google",
+  "@sign_in_with_google": {},
+  "sign_in_with_facebook": "Sign in with Facebook",
+  "@sign_in_with_facebook": {},
+  "welcome_to_app": "Welcome to Our App",
+  "@welcome_to_app": {},
+  "e_shopping": "E Shopping",
+  "@e_shopping": {},
+  "explore_fruits": "Explore organic fruits & grab them",
+  "@explore_fruits": {},
+  "delivery_arrived": "Delivery Arrived",
+  "@delivery_arrived": {},
+  "order_arrived_place": "Order has arrived at your place",
+  "@order_arrived_place": {},
+  "fast_payment": "Fast Payment",
+  "@fast_payment": {},
+  "quick_secure_checkout": "Quick and secure checkout process",
+  "@quick_secure_checkout": {},
+  "next": "Next",
+  "@next": {},
+  "get_started": "Get Started",
+  "@get_started": {},
+  "not_received": "Not received?",
+  "@not_received": {},
+  "send_again": "Send Again",
+  "@send_again": {},
+  "enter_received_otp": "Enter Received OTP",
+  "@enter_received_otp": {},
+  "confirm": "Confirm",
+  "@confirm": {},
   "welcome": "Welcome",
   "@welcome": {},
-  
   "profile": "Profile",
   "@profile": {},
-  
   "favorites": "Favorites",
   "@favorites": {},
-  
   "language": "Language",
   "@language": {},
-  
   "support": "Support",
   "@support": {},
-  
   "about_us": "About Us",
   "@about_us": {},
-  
   "terms_conditions": "Terms & Conditions",
   "@terms_conditions": {},
-
-"category": "Category",
-"@category": {},
-
-"products": "Products",
-"@products": {},
-
+  "category": "Category",
+  "@category": {},
+  "products": "Products",
+  "@products": {},
   "delivered_to": "Delivered To",
   "@delivered_to": {},
-
   "delivery_charges": "Delivery Charges :",
   "@delivery_charges": {},
-
   "all_areas": "All Areas",
   "@all_areas": {},
-
   "offers": "Offers",
   "@offers": {},
-
   "free_delivery": "Free Delivery",
   "@free_delivery": {},
-
   "apply_filter": "Apply Filter",
   "@apply_filter": {},
-
   "close": "Close",
   "@close": {},
-
   "filter_by": "Filter by",
   "@filter_by": {},
-
   "km": "km",
   "@km": {},
-
   "open": "Open",
   "@open": {},
-  "basket":"Basket",
+  "basket": "Basket",
   "@basket": {},
   "paymentAmount": "Payment {amount} EGP",
   "@paymentAmount": {
@@ -182,86 +126,62 @@
         "type": "double",
         "example": "120"
       }
-    }},
-  "cartItemsCount": "{count, plural, =0{Your cart is empty} =1{You have 1 item in your shopping cart} other{You have {count} items in your shopping cart}}"
- , "@cartItemsCount": {
-            "placeholders": {
-                  "count": {}
-            }}
-
-,
+    }
+  },
+  "cartItemsCount": "{count, plural, =0{Your cart is empty} =1{You have 1 item in your shopping cart} other{You have {count} items in your shopping cart}}",
+  "@cartItemsCount": {
+    "placeholders": {
+      "count": {}
+    }
+  },
   "checkout": "Checkout",
   "@checkout": {},
-
   "deliveryTime": "Delivery Time",
   "@deliveryTime": {},
-
   "deliveryAddress": "Delivery Address",
   "@deliveryAddress": {},
-
   "payment": "Payment",
   "@payment": {},
-
   "now": "Now",
   "@now": {},
-
   "selectDeliveryTime": "Select Delivery Time",
   "@selectDeliveryTime": {},
-
   "selectDate": "Select Date",
   "@selectDate": {},
-
   "selectDeliveryAddress": "Select Delivery Address",
   "@selectDeliveryAddress": {},
-
   "addNewAddress": "Add New Address",
   "@addNewAddress": {},
-
   "couponCode": "Coupon Code",
   "@couponCode": {},
-
   "haveCoupon": "Do You Have any Coupon Code?",
   "@haveCoupon": {},
-
   "orderDetails": "Order Details",
   "@orderDetails": {},
-
   "totalItems": "Total Items",
   "@totalItems": {},
-
   "subtotal": "Subtotal",
   "@subtotal": {},
-
   "shippingCharges": "Shipping Charges",
   "@shippingCharges": {},
-
   "bagTotal": "Bag Total",
   "@bagTotal": {},
-
   "creditCard": "Credit Card/Debit Card",
   "@creditCard": {},
-
   "cashOnDelivery": "Cash on Delivery",
   "@cashOnDelivery": {},
-
   "knet": "Knet",
   "@knet": {},
-
   "placeOrder": "Place Order",
   "@placeOrder": {},
-
   "orderConfirmed": "YOUR ORDER IS CONFIRMED!",
   "@orderConfirmed": {},
-
   "thankYou": "Thank you for choosing our products!",
   "@thankYou": {},
-
   "continueShopping": "Continue Shopping",
   "@continueShopping": {},
-
   "trackOrder": "Track Order",
   "@trackOrder": {},
-
   "orderCode": "Your order code: #{code}",
   "@orderCode": {
     "description": "Order confirmation message with order code",
@@ -271,86 +191,67 @@
         "example": "243188"
       }
     }
-  }
-
-,"myOrders": "My Orders",
-"@myOrders": {},
-
+  },
+  "myOrders": "My Orders",
+  "@myOrders": {},
   "name": "Name",
   "@name": {},
-
   "please_enter_your_name": "Please enter your name",
   "@please_enter_your_name": {},
-
   "email": "Email",
   "@email": {},
-
   "please_enter_your_email": "Please enter your email",
   "@please_enter_your_email": {},
-
   "address": "Address",
   "@address": {},
-
   "please_enter_address": "Please enter address",
   "@please_enter_address": {},
-
   "city": "City",
   "@city": {},
-
   "please_enter_city": "Please enter city",
   "@please_enter_city": {},
-
   "floor_apartment": "Floor/Apartment",
   "@floor_apartment": {},
-
   "please_enter_floor_apartment": "Please enter floor/apartment",
   "@please_enter_floor_apartment": {},
-
   "phone": "Phone",
   "@phone": {},
-
   "please_enter_phone": "Please enter phone number",
   "@please_enter_phone": {},
-  
-"delivering": "Delivering",
-"@delivering": {},
-
-"finished": "Finished",
-"@finished": {},
-
-"canceled": "Canceled",
-"@canceled": {},
-
-"working": "Working",
-"@working": {},
-
-"delivered": "Delivered",
-"@delivered": {},
-
-"newOrder": "New",
-"@newOrder": {}
-
-,"message": "Message",
-"@message": {},
- "home": "Home",
+  "delivering": "Delivering",
+  "@delivering": {},
+  "finished": "Finished",
+  "@finished": {},
+  "canceled": "Canceled",
+  "@canceled": {},
+  "working": "Working",
+  "@working": {},
+  "delivered": "Delivered",
+  "@delivered": {},
+  "newOrder": "New",
+  "@newOrder": {},
+  "message": "Message",
+  "@message": {},
+  "home": "Home",
   "@home": {},
-
   "orders": "Orders",
   "@orders": {},
-
   "more": "More",
   "@more": {},
-
-"favoriteItemsCount": "{count, plural, =0{Your favorite list is empty} =1{You have 1 item in your favorite list} other{You have {count} items in your favorite list}}",
-"@favoriteItemsCount": {
-  "description": "Message showing number of items in favorites",
-  "placeholders": {
-    "count": {
-      "type": "int",
-      "example": "3"
+  "favoriteItemsCount": "{count, plural, =0{Your favorite list is empty} =1{You have 1 item in your favorite list} other{You have {count} items in your favorite list}}",
+  "@favoriteItemsCount": {
+    "description": "Message showing number of items in favorites",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "3"
+      }
     }
-  }
-}
-
-
+  },
+  "confirm_password": "Confirm Password",
+  "@confirm_password": {},
+  "please_enter_your_password": "Please enter your password",
+  "@please_enter_your_password": {},
+  "sign_up_success": "Sign up success",
+  "@sign_up_success": {}
 }

@@ -1,175 +1,123 @@
-{"@@locale": "ar",  "skip": "تخطي",
-"@skip": {},
-"enter_your_number": "أدخل رقمك",
-"@enter_your_number": {},
-
-"phone_number": "رقم الهاتف",
-"@phone_number": {},
-
-"mobile_number": "رقم الجوال",
-"@mobile_number": {},
-
-"submit": "إرسال",
-"@submit": {},
-
-"sign_up_to_wikala": "إنشاء حساب في ويكالا",
-"@sign_up_to_wikala": {},
-
-"sign_up": "إنشاء حساب",
-"@sign_up": {},
-
-"already_have_account": "لديك حساب بالفعل؟",
-"@already_have_account": {},
-
-"login": " تسجيل الدخول ",
-"@login": {},
-
-"full_name": "الاسم الكامل",
-"@full_name": {},
-
-"first_and_last_name": "الاسم الأول واسم العائلة",
-"@first_and_last_name": {},
-
-"phone_number_whatsapp": "رقم الهاتف مع واتساب",
-"@phone_number_whatsapp": {},
-
-"password": "كلمة المرور",
-"@password": {},
-
-"login_to_wikala": "تسجيل الدخول إلى ويكالا",
-"@login_to_wikala": {},
-
-"donot_have_account": "ليس لديك حساب؟",
-"@donot_have_account": {},
-
-"forget_password": "نسيت كلمة المرور؟",
-"@forget_password": {},
-
-"already_member": "عضو بالفعل؟",
-"@already_member": {},
-
-"sign_in": "تسجيل دخول",
-"@sign_in": {},
-
-"by_continue_agree": "بمتابعتك، فإنك توافق على",
-"@by_continue_agree": {},
-
-"terms_of_service": " شروط الخدمة ",
-"@terms_of_service": {},
-
-"terms_of_service_tapped": "تم الضغط على شروط الخدمة!",
-"@terms_of_service_tapped": {},
-
-"and_our": " و ",
-"@and_our": {},
-
-"privacy_policy": "سياسة الخصوصية",
-"@privacy_policy": {},
-
-"sign_in_with_phone": "تسجيل الدخول باستخدام رقم الهاتف",
-"@sign_in_with_phone": {},
-
-"sign_in_with_google": "تسجيل الدخول باستخدام جوجل",
-"@sign_in_with_google": {},
-
-"sign_in_with_facebook": "تسجيل الدخول باستخدام فيسبوك",
-"@sign_in_with_facebook": {},
-
-"welcome_to_app": "مرحبًا بك في تطبيقنا",
-"@welcome_to_app": {},
-
-"e_shopping": "تسوق إلكتروني",
-"@e_shopping": {},
-
-"explore_fruits": "استكشف الفواكه العضوية واحصل عليها",
-"@explore_fruits": {},
-
-"delivery_arrived": "تم التوصيل",
-"@delivery_arrived": {},
-
-"order_arrived_place": "تم توصيل الطلب إلى مكانك",
-"@order_arrived_place": {},
-
-"fast_payment": "دفع سريع",
-"@fast_payment": {},
-
-"quick_secure_checkout": "عملية دفع سريعة وآمنة",
-"@quick_secure_checkout": {},
-
-"next": "التالي",
-"@next": {},
-
-"get_started": "ابدأ",
-"@get_started": {},
-"enter_received_otp": "أدخل رمز التحقق المستلم",
-"@enter_received_otp": {},
-
-"confirm": "تأكيد",
-"@confirm": {},
-"not_received": "لم يصلك الرمز؟",
-"@not_received": {},
-
-"send_again": "أعد الإرسال",
-"@send_again": {},
-
+{
+  "@@locale": "ar",
+  "skip": "تخطي",
+  "@skip": {},
+  "enter_your_number": "أدخل رقمك",
+  "@enter_your_number": {},
+  "phone_number": "رقم الهاتف",
+  "@phone_number": {},
+  "mobile_number": "رقم الجوال",
+  "@mobile_number": {},
+  "submit": "إرسال",
+  "@submit": {},
+  "sign_up_to_wikala": "إنشاء حساب في ويكالا",
+  "@sign_up_to_wikala": {},
+  "sign_up": "إنشاء حساب",
+  "@sign_up": {},
+  "already_have_account": "لديك حساب بالفعل؟",
+  "@already_have_account": {},
+  "login": " تسجيل الدخول ",
+  "@login": {},
+  "full_name": "الاسم الكامل",
+  "@full_name": {},
+  "first_and_last_name": "الاسم الأول واسم العائلة",
+  "@first_and_last_name": {},
+  "phone_number_whatsapp": "رقم الهاتف مع واتساب",
+  "@phone_number_whatsapp": {},
+  "password": "كلمة المرور",
+  "@password": {},
+  "login_to_wikala": "تسجيل الدخول إلى ويكالا",
+  "@login_to_wikala": {},
+  "donot_have_account": "ليس لديك حساب؟",
+  "@donot_have_account": {},
+  "forget_password": "نسيت كلمة المرور؟",
+  "@forget_password": {},
+  "already_member": "عضو بالفعل؟",
+  "@already_member": {},
+  "sign_in": "تسجيل دخول",
+  "@sign_in": {},
+  "by_continue_agree": "بمتابعتك، فإنك توافق على",
+  "@by_continue_agree": {},
+  "terms_of_service": " شروط الخدمة ",
+  "@terms_of_service": {},
+  "terms_of_service_tapped": "تم الضغط على شروط الخدمة!",
+  "@terms_of_service_tapped": {},
+  "and_our": " و ",
+  "@and_our": {},
+  "privacy_policy": "سياسة الخصوصية",
+  "@privacy_policy": {},
+  "sign_in_with_phone": "تسجيل الدخول باستخدام رقم الهاتف",
+  "@sign_in_with_phone": {},
+  "sign_in_with_google": "تسجيل الدخول باستخدام جوجل",
+  "@sign_in_with_google": {},
+  "sign_in_with_facebook": "تسجيل الدخول باستخدام فيسبوك",
+  "@sign_in_with_facebook": {},
+  "welcome_to_app": "مرحبًا بك في تطبيقنا",
+  "@welcome_to_app": {},
+  "e_shopping": "تسوق إلكتروني",
+  "@e_shopping": {},
+  "explore_fruits": "استكشف الفواكه العضوية واحصل عليها",
+  "@explore_fruits": {},
+  "delivery_arrived": "تم التوصيل",
+  "@delivery_arrived": {},
+  "order_arrived_place": "تم توصيل الطلب إلى مكانك",
+  "@order_arrived_place": {},
+  "fast_payment": "دفع سريع",
+  "@fast_payment": {},
+  "quick_secure_checkout": "عملية دفع سريعة وآمنة",
+  "@quick_secure_checkout": {},
+  "next": "التالي",
+  "@next": {},
+  "get_started": "ابدأ",
+  "@get_started": {},
+  "enter_received_otp": "أدخل رمز التحقق المستلم",
+  "@enter_received_otp": {},
+  "confirm": "تأكيد",
+  "@confirm": {},
+  "not_received": "لم يصلك الرمز؟",
+  "@not_received": {},
+  "send_again": "أعد الإرسال",
+  "@send_again": {},
   "welcome": "مرحبًا",
   "@welcome": {},
-  
   "profile": "الحساب",
   "@profile": {},
-  
   "favorites": "المفضلة",
   "@favorites": {},
-  
   "language": "اللغة",
   "@language": {},
-  
   "support": "الدعم",
   "@support": {},
-  
   "about_us": "من نحن",
   "@about_us": {},
-  
   "terms_conditions": "الشروط والأحكام",
   "@terms_conditions": {},
-  
   "delivered_to": "التسليم إلى",
   "@delivered_to": {},
   "category": "الفئة",
-"@category": {},
-"products": "المنتجات",
-"@products": {},
-
-
+  "@category": {},
+  "products": "المنتجات",
+  "@products": {},
   "delivery_charges": "رسوم التوصيل :",
   "@delivery_charges": {},
-
   "all_areas": "كل المناطق",
   "@all_areas": {},
-
   "offers": "العروض",
   "@offers": {},
-
   "free_delivery": "توصيل مجاني",
   "@free_delivery": {},
-
   "apply_filter": "تطبيق الفلتر",
   "@apply_filter": {},
-
   "close": "إغلاق",
   "@close": {},
-
   "filter_by": "تصفية حسب",
   "@filter_by": {},
-
   "km": "كم",
   "@km": {},
-
   "open": "فتح",
   "@open": {},
-  "basket":"السله",
-  "@basket": {}
-  ,
+  "basket": "السله",
+  "@basket": {},
   "paymentAmount": "الدفع {amount} جنيه",
   "@paymentAmount": {
     "description": "رسالة الدفع مع المبلغ المتغير",
@@ -178,87 +126,62 @@
         "type": "double",
         "example": "120"
       }
-    }},
-  "cartItemsCount": "{count, plural, =0{سلة التسوق فارغة} =1{لديك منتج واحد في سلة التسوق} =2{لديك منتجان في سلة التسوق} few{لديك {count} منتجات في سلة التسوق} other{لديك {count} منتج في سلة التسوق}}"
-,      "@cartItemsCount": {
-            "placeholders": {
-                  "count": {}
-            }
-
-
-              },
+    }
+  },
+  "cartItemsCount": "{count, plural, =0{سلة التسوق فارغة} =1{لديك منتج واحد في سلة التسوق} =2{لديك منتجان في سلة التسوق} few{لديك {count} منتجات في سلة التسوق} other{لديك {count} منتج في سلة التسوق}}",
+  "@cartItemsCount": {
+    "placeholders": {
+      "count": {}
+    }
+  },
   "checkout": "الدفع",
   "@checkout": {},
-
   "deliveryTime": "وقت التوصيل",
   "@deliveryTime": {},
-
   "deliveryAddress": "عنوان التوصيل",
   "@deliveryAddress": {},
-
   "payment": "الدفع",
   "@payment": {},
-
   "now": "الآن",
   "@now": {},
-
   "selectDeliveryTime": "اختر وقت التوصيل",
   "@selectDeliveryTime": {},
-
   "selectDate": "اختر التاريخ",
   "@selectDate": {},
-
   "selectDeliveryAddress": "اختر عنوان التوصيل",
   "@selectDeliveryAddress": {},
-
   "addNewAddress": "أضف عنوان جديد",
   "@addNewAddress": {},
-
   "couponCode": "كود الخصم",
   "@couponCode": {},
-
   "haveCoupon": "هل لديك كود خصم؟",
   "@haveCoupon": {},
-
   "orderDetails": "تفاصيل الطلب",
   "@orderDetails": {},
-
   "totalItems": "إجمالي العناصر",
   "@totalItems": {},
-
   "subtotal": "الإجمالي الفرعي",
   "@subtotal": {},
-
   "shippingCharges": "مصاريف الشحن",
   "@shippingCharges": {},
-
   "bagTotal": "إجمالي الحقيبة",
   "@bagTotal": {},
-
   "creditCard": "بطاقة ائتمان/خصم",
   "@creditCard": {},
-
   "cashOnDelivery": "الدفع عند الاستلام",
   "@cashOnDelivery": {},
-
   "knet": "كي نت",
   "@knet": {},
-
   "placeOrder": "إتمام الطلب",
   "@placeOrder": {},
-
   "orderConfirmed": "تم تأكيد طلبك!",
   "@orderConfirmed": {},
-
   "thankYou": "شكرًا لاختيارك منتجاتنا!",
   "@thankYou": {},
-
   "continueShopping": "متابعة التسوق",
   "@continueShopping": {},
-
   "trackOrder": "تتبع الطلب",
   "@trackOrder": {},
-
   "orderCode": "كود الطلب الخاص بك: #{code}",
   "@orderCode": {
     "description": "رسالة تأكيد الطلب تحتوي على كود الطلب",
@@ -268,92 +191,67 @@
         "example": "243188"
       }
     }
-  }
-,
+  },
   "name": "الاسم",
   "@name": {},
-
   "please_enter_your_name": "من فضلك أدخل اسمك",
   "@please_enter_your_name": {},
-
   "email": "البريد الإلكتروني",
   "@email": {},
-
   "please_enter_your_email": "من فضلك أدخل البريد الإلكتروني",
   "@please_enter_your_email": {},
-
   "address": "العنوان",
   "@address": {},
-
   "please_enter_address": "من فضلك أدخل العنوان",
   "@please_enter_address": {},
-
   "city": "المدينة",
   "@city": {},
-
   "please_enter_city": "من فضلك أدخل المدينة",
   "@please_enter_city": {},
-
   "floor_apartment": "الدور/الشقة",
   "@floor_apartment": {},
-
   "please_enter_floor_apartment": "من فضلك أدخل الدور/الشقة",
   "@please_enter_floor_apartment": {},
-
   "phone": "رقم الهاتف",
   "@phone": {},
-
   "please_enter_phone": "من فضلك أدخل رقم الهاتف",
   "@please_enter_phone": {},
   "myOrders": "طلباتي",
-"@myOrders": {},
-"delivering": "قيد التوصيل",
-"@delivering": {},
-
-"finished": "مكتمل",
-"@finished": {},
-
-"canceled": "ملغي",
-"@canceled": {},
-
-"working": "جاري التنفيذ",
-"@working": {},
-
-"delivered": "تم التوصيل",
-"@delivered": {},
-
-"newOrder": "جديد",
-"@newOrder": {},
-"message": "رسالة",
-"@message": {},
-"home": "الرئيسية",
+  "@myOrders": {},
+  "delivering": "قيد التوصيل",
+  "@delivering": {},
+  "finished": "مكتمل",
+  "@finished": {},
+  "canceled": "ملغي",
+  "@canceled": {},
+  "working": "جاري التنفيذ",
+  "@working": {},
+  "delivered": "تم التوصيل",
+  "@delivered": {},
+  "newOrder": "جديد",
+  "@newOrder": {},
+  "message": "رسالة",
+  "@message": {},
+  "home": "الرئيسية",
   "@home": {},
-
   "orders": "الطلبات",
   "@orders": {},
-
   "more": "المزيد",
   "@more": {},
-"favoriteItemsCount": "{count, plural, =0{قائمة المفضلة فارغة} =1{لديك عنصر واحد في قائمة المفضلة} other{لديك {count} عناصر في قائمة المفضلة}}",
-"@favoriteItemsCount": {
-  "description": "رسالة توضح عدد العناصر في المفضلة",
-  "placeholders": {
-    "count": {
-      "type": "int",
-      "example": "3"
+  "favoriteItemsCount": "{count, plural, =0{قائمة المفضلة فارغة} =1{لديك عنصر واحد في قائمة المفضلة} other{لديك {count} عناصر في قائمة المفضلة}}",
+  "@favoriteItemsCount": {
+    "description": "رسالة توضح عدد العناصر في المفضلة",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "3"
+      }
     }
-  }
+  },
+  "confirm_password": "تأكيد كلمة المرور",
+  "@confirm_password": {},
+  "please_enter_your_password": "من فضلك أدخل كلمة المرور",
+  "@please_enter_your_password": {},
+  "sign_up_success": "تم التسجيل بنجاح",
+  "@sign_up_success": {}
 }
-
-
-
-}
-
-
-    
-
-
-
-
-
-

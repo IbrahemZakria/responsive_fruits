@@ -1155,6 +1155,36 @@ class S {
       args: [count],
     );
   }
+
+  /// `Confirm Password`
+  String get confirm_password {
+    return Intl.message(
+      'Confirm Password',
+      name: 'confirm_password',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please enter your password`
+  String get please_enter_your_password {
+    return Intl.message(
+      'Please enter your password',
+      name: 'please_enter_your_password',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sign up success`
+  String get sign_up_success {
+    return Intl.message(
+      'Sign up success',
+      name: 'sign_up_success',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

@@ -6,8 +6,7 @@ import 'package:responsive_fruits/core/utils/functions/shared_preferance.dart';
 import 'package:responsive_fruits/core/utils/helper/cubits/localization/localization_cubit.dart';
 import 'package:responsive_fruits/features/home/presentation/cubit/home/home_cubit.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:responsive_fruits/features/home/presentation/pages/adabtive_main_home_page.dart';
-import 'package:responsive_fruits/features/onboarding/presentation/pages/on_boarding_view.dart';
+import 'package:responsive_fruits/features/splash/presentation/pages/splash_page.dart';
 import 'generated/l10n.dart';
 
 import 'package:responsive_fruits/features/home/presentation/cubit/cart_cubit/cart_cubit.dart';
@@ -28,10 +27,7 @@ class ResponsiveFruits extends StatelessWidget {
       child: Builder(
         builder: (context) {
           final router = buildRouter(
-            initialLocation:
-                (SharedPreferance.getData<bool>(ConstantString.islogin) == true)
-                ? '/${AdabtiveMainHomePage.routeName}/home'
-                : '/${OnBoardingView.routeName}',
+            initialLocation: '/${SplashPage.routeName}',
           );
 
           return MaterialApp.router(

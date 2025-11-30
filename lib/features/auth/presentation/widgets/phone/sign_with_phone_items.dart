@@ -1,34 +1,84 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_fruits/features/auth/presentation/widgets/titel_text_field.dart';
-import 'package:responsive_fruits/features/auth/presentation/widgets/whats_app_form.dart';
+import 'package:gap/gap.dart';
+import 'package:responsive_fruits/core/widgets/custome_text_form_field.dart';
 import 'package:responsive_fruits/generated/l10n.dart';
 
 class SignWithPhoneItems extends StatelessWidget {
-  const SignWithPhoneItems({super.key});
+  const SignWithPhoneItems({
+    super.key,
+    required this.emailController,
+    required this.phoneNumberController,
+    required this.passwordController,
+    required this.confirmPasswordController,
+    required this.fullNameController,
+  });
+  final TextEditingController emailController;
+  final TextEditingController phoneNumberController;
+  final TextEditingController passwordController;
+  final TextEditingController confirmPasswordController;
+  final TextEditingController fullNameController;
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
-        TitelTextField(
-          titel: S.of(context).full_name,
-          hintText: S.of(context).first_and_last_name,
+        Gap(8),
+        CustomeTextFormField(
+          textType: TextInputType.emailAddress,
+          controller: emailController,
+          hintText: S.of(context).email,
+          validator: (value) {
+            if (value!.isEmpty) {
+              return S.of(context).please_enter_your_email;
+            }
+            return null;
+          },
         ),
-        SizedBox(height: 8),
-        WhatsAppForm(
+        CustomeTextFormField(
+          textType: TextInputType.phone,
+          controller: phoneNumberController,
           hintText: S.of(context).phone_number,
-          titel: S.of(context).mobile_number,
+          validator: (value) {
+            if (value!.isEmpty) {
+              return S.of(context).please_enter_phone;
+            }
+            return null;
+          },
         ),
-        SizedBox(height: 8),
-        TitelTextField(
-          titel: S.of(context).password,
-          hintText: S.of(context).password,
-        ),
-        SizedBox(height: 8),
+        CustomeTextFormField(
+          isPassword: true,
+          textType: TextInputType.visiblePassword,
 
-        TitelTextField(
-          titel: S.of(context).full_name,
+          controller: passwordController,
+          hintText: S.of(context).password,
+          validator: (value) {
+            if (value!.isEmpty) {
+              return S.of(context).please_enter_your_password;
+            }
+            return null;
+          },
+        ),
+        CustomeTextFormField(
+          isPassword: true,
+          controller: confirmPasswordController,
+          hintText: S.of(context).confirm_password,
+          validator: (value) {
+            if (value!.isEmpty) {
+              return S.of(context).please_enter_your_password;
+            }
+            return null;
+          },
+        ),
+        CustomeTextFormField(
+          textType: TextInputType.name,
+          controller: fullNameController,
           hintText: S.of(context).first_and_last_name,
+          validator: (value) {
+            if (value!.isEmpty) {
+              return S.of(context).please_enter_your_name;
+            }
+            return null;
+          },
         ),
       ],
     );

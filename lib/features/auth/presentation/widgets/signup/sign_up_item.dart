@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:responsive_fruits/core/utils/helper/thems/app_colors.dart';
 import 'package:responsive_fruits/core/utils/helper/thems/app_text_syles.dart';
-import 'package:responsive_fruits/features/auth/data/models/signup_model.dart';
+import 'package:responsive_fruits/features/auth/domain/entities/signup_model.dart';
 
 class SignUpItem extends StatelessWidget {
   const SignUpItem({super.key, required this.model});
-  final SignupModel model;
+  final AddRegesterEntity model;
 
   @override
   Widget build(BuildContext context) {
